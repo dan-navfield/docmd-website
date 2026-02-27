@@ -136,12 +136,12 @@ export default function LoginPage() {
       {/* Bottom link */}
       <p className="text-center mt-6 text-sm text-white/60">
         Don&apos;t have an account?{" "}
-        <Link
-          href="/signup"
+        <a
+          href="https://app.mddoc.app/signup"
           className="font-semibold text-white hover:text-golden transition-colors"
         >
           Sign up
-        </Link>
+        </a>
       </p>
     </motion.div>
   );

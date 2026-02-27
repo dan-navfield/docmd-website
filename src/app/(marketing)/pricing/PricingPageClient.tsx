@@ -181,7 +181,7 @@ function PricingCards({ isAnnual }: { isAnnual: boolean }) {
                 {isHighlighted ? (
                   <MagneticButton
                     as="a"
-                    href={`/signup?tier=${tierSlug}`}
+                    href={`https://app.mddoc.app/signup?tier=${tierSlug}`}
                     className="w-full inline-flex items-center justify-center gap-2 bg-golden text-forest-dark font-semibold px-6 py-3.5 rounded-xl hover:bg-golden-dark transition-all shadow-md shadow-golden-dark/20"
                   >
                     {tier.cta}
@@ -189,7 +189,7 @@ function PricingCards({ isAnnual }: { isAnnual: boolean }) {
                   </MagneticButton>
                 ) : (
                   <Link
-                    href={`/signup?tier=${tierSlug}`}
+                    href={`https://app.mddoc.app/signup?tier=${tierSlug}`}
                     className={cn(
                       "w-full inline-flex items-center justify-center gap-2 font-semibold px-6 py-3.5 rounded-xl transition-all",
                       tierSlug === "enterprise"
@@ -293,7 +293,7 @@ function CtaBanner() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <MagneticButton
               as="a"
-              href="/signup?tier=solo"
+              href="https://app.mddoc.app/signup?tier=solo"
               className="inline-flex items-center justify-center gap-2 bg-golden text-forest-dark font-bold px-8 py-4 rounded-xl text-lg hover:bg-golden-light transition-all shadow-lg"
             >
               Get Started

@@ -280,12 +280,12 @@ function SignupForm() {
       {/* Bottom link */}
       <p className="text-center mt-6 text-sm text-white/60">
         Already have an account?{" "}
-        <Link
-          href="/login"
+        <a
+          href="https://app.mddoc.app/login"
           className="font-semibold text-white hover:text-golden transition-colors"
         >
           Log in
-        </Link>
+        </a>
       </p>
     </motion.div>
   );

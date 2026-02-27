@@ -63,20 +63,20 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
               </nav>
 
               <div className="mt-auto flex flex-col gap-3">
-                <Link
-                  href="/login"
+                <a
+                  href="https://app.mddoc.app/login"
                   onClick={onClose}
                   className="text-center text-sm font-medium text-forest py-3.5 px-4 rounded-xl border border-sand-dark hover:bg-cream transition-colors"
                 >
                   Log in
-                </Link>
-                <Link
-                  href="/signup"
+                </a>
+                <a
+                  href="https://app.mddoc.app/signup"
                   onClick={onClose}
                   className="text-center text-sm font-semibold bg-golden text-forest-dark py-3.5 px-4 rounded-xl hover:bg-golden-dark transition-colors"
                 >
                   Get started free
-                </Link>
+                </a>
               </div>
             </div>
           </motion.div>

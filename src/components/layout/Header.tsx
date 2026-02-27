@@ -56,8 +56,8 @@ export function Header() {
             </nav>
 
             <div className="hidden md:flex items-center gap-4">
-              <Link
-                href="/login"
+              <a
+                href="https://app.mddoc.app/login"
                 className={cn(
                   "text-sm font-medium transition-colors px-4 py-2",
                   scrolled
@@ -66,9 +66,9 @@ export function Header() {
                 )}
               >
                 Log in
-              </Link>
-              <Link
-                href="/signup"
+              </a>
+              <a
+                href="https://app.mddoc.app/signup"
                 className={cn(
                   "text-sm font-semibold px-6 py-2.5 rounded-full transition-all hover:-translate-y-px",
                   scrolled
@@ -77,7 +77,7 @@ export function Header() {
                 )}
               >
                 Get started
-              </Link>
+              </a>
             </div>
 
             <button

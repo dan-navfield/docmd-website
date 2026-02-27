@@ -512,7 +512,7 @@ function ConverterTool() {
                     </div>
                   </div>
                   <Link
-                    href="/signup?tier=solo"
+                    href="https://app.mddoc.app/signup?tier=solo"
                     className="inline-flex items-center gap-2 bg-golden text-forest-dark font-semibold px-6 py-3 rounded-xl text-sm hover:bg-golden-dark transition-colors flex-shrink-0"
                   >
                     Sign Up Free
@@ -727,7 +727,7 @@ function CtaSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <MagneticButton
               as="a"
-              href="/signup?tier=solo"
+              href="https://app.mddoc.app/signup?tier=solo"
               className="inline-flex items-center justify-center gap-2 bg-golden text-forest-dark font-bold px-8 py-4 rounded-xl text-lg hover:bg-golden-light transition-all shadow-lg"
             >
               Sign Up Free
