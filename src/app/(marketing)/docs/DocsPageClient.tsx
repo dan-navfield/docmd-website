@@ -282,8 +282,8 @@ function DocsCta() {
             Ready to integrate?
           </h2>
           <p className="text-lg text-white/60 max-w-xl mx-auto mb-10">
-            Get your first conversion running in under five minutes. Free trial
-            included — no credit card required.
+            Get your first conversion running in under five minutes. 3 free
+            conversions — no account needed.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -297,7 +297,7 @@ function DocsCta() {
               href="/convert"
               className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-8 py-4 rounded-xl text-lg hover:bg-white/20 transition-all border border-white/10"
             >
-              Try It Free
+              Convert Free
             </Link>
           </div>
         </ScrollReveal>

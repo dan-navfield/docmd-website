@@ -421,7 +421,7 @@ function CtaBanner() {
             href="/convert"
             className="inline-flex items-center justify-center gap-2 bg-golden text-forest-dark font-bold px-8 py-4 rounded-xl text-lg hover:bg-golden-light transition-all shadow-lg"
           >
-            Try It Free
+            Convert Free
             <ArrowRight className="w-5 h-5" />
           </MagneticButton>
         </ScrollReveal>

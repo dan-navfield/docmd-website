@@ -25,7 +25,7 @@ export const tiers = [
   {
     name: "Team",
     price: { monthly: 49, annual: 41 },
-    description: "For teams that need templates and control.",
+    description: "For teams that need to share templates and control.",
     features: [
       { name: "Unlimited conversions", included: true },
       { name: "All templates", included: true },
@@ -42,7 +42,7 @@ export const tiers = [
       { name: "API access", included: true },
       { name: "Email support", included: true },
     ],
-    cta: "Start Team Trial",
+    cta: "Get Started",
     highlighted: true,
   },
   {

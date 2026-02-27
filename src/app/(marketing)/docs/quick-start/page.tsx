@@ -40,9 +40,8 @@ export default function QuickStartPage() {
         </ol>
         <div className="bg-golden/10 border-l-4 border-golden rounded-r-lg p-4 mb-6">
           <p className="text-sm text-bark">
-            <span className="font-semibold">Free trial included.</span> Every
-            Team plan starts with a 14-day trial. No credit card required to get
-            started.
+            <span className="font-semibold">Try it free.</span> Convert up to 3
+            documents on the Convert page — no account needed.
           </p>
         </div>
       </section>

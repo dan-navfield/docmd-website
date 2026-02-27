@@ -790,7 +790,7 @@ function Cta() {
           <p className="text-lg text-white/50 max-w-md mx-auto mb-12 leading-relaxed">
             Convert your first document in under a minute.
             <br />
-            No credit card. No commitment.
+            No account needed. No commitment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

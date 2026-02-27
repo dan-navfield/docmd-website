@@ -46,7 +46,7 @@ function PricingHero() {
             <GradientText variant="golden">No surprises.</GradientText>
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-            Try it free on the Convert page. Plans start at $10/month.
+            Convert 3 documents free on the Convert page. Plans start at $10/month.
           </p>
         </motion.div>
       </Container>
@@ -287,8 +287,8 @@ function CtaBanner() {
             Start converting today.
           </h2>
           <p className="text-lg text-white/80 max-w-xl mx-auto mb-10">
-            Try it free on the Convert page. When you&apos;re ready, Solo starts
-            at just $10/month.
+            Convert 3 documents free — no account needed. When you&apos;re ready,
+            Solo starts at just $10/month.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <MagneticButton
@@ -303,7 +303,7 @@ function CtaBanner() {
               href="/convert"
               className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-xl text-lg hover:bg-white/10 transition-all"
             >
-              Try It Free
+              Convert Free
             </Link>
           </div>
         </ScrollReveal>
