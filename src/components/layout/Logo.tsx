@@ -9,25 +9,38 @@ interface LogoProps {
 export function Logo({ variant = "dark", className }: LogoProps) {
   return (
     <Link href="/" className={cn("flex items-center gap-2.5 group", className)}>
-      <div
-        className={cn(
-          "relative w-9 h-9 rounded-xl flex items-center justify-center transition-transform duration-200 group-hover:scale-105",
-          variant === "dark" ? "bg-forest" : "bg-white/10"
-        )}
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          className="w-5 h-5"
-          stroke={variant === "dark" ? "#FAFD99" : "#FAFD99"}
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
-          <path d="M14 2v6h6" />
-          <path d="M9 13h6" />
-          <path d="M9 17h3" />
+      <div className="relative w-9 h-9 transition-transform duration-200 group-hover:scale-105">
+        <svg viewBox="0 0 512 512" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <rect width="512" height="512" rx="96" ry="96" fill="#FAFD99"/>
+          <g transform="translate(140, 140)">
+            <path d="M40,0 H185 L232,47 V310 Q232,320 222,320 H40 Q30,320 30,310 V10 Q30,0 40,0 Z" fill="#FDFCF5" stroke="#4C573E" strokeWidth="10"/>
+            <path d="M185,0 V37 Q185,47 195,47 H232" fill="#EDEBE0" stroke="#4C573E" strokeWidth="10" strokeLinejoin="round"/>
+            <line x1="70" y1="90" x2="192" y2="90" stroke="#DDDACC" strokeWidth="10" strokeLinecap="round"/>
+            <line x1="70" y1="130" x2="192" y2="130" stroke="#DDDACC" strokeWidth="10" strokeLinecap="round"/>
+            <line x1="70" y1="170" x2="160" y2="170" stroke="#DDDACC" strokeWidth="10" strokeLinecap="round"/>
+            <line x1="70" y1="210" x2="192" y2="210" stroke="#DDDACC" strokeWidth="10" strokeLinecap="round"/>
+            <line x1="70" y1="250" x2="140" y2="250" stroke="#DDDACC" strokeWidth="10" strokeLinecap="round"/>
+          </g>
+          <g transform="translate(108, 52)">
+            <line x1="148" y1="0" x2="148" y2="40" stroke="#4C573E" strokeWidth="10" strokeLinecap="round"/>
+            <circle cx="148" cy="0" r="14" fill="#6B7F5A"/>
+            <rect x="48" y="40" width="200" height="160" rx="32" ry="32" fill="#4C573E"/>
+            <rect x="72" y="70" width="152" height="80" rx="16" ry="16" fill="#5E6B4E"/>
+            <circle cx="118" cy="110" r="22" fill="#FAFD99"/>
+            <circle cx="178" cy="110" r="22" fill="#FAFD99"/>
+            <circle cx="122" cy="108" r="10" fill="#3B432F"/>
+            <circle cx="182" cy="108" r="10" fill="#3B432F"/>
+            <circle cx="115" cy="103" r="5" fill="#FDFCF5" opacity="0.8"/>
+            <circle cx="175" cy="103" r="5" fill="#FDFCF5" opacity="0.8"/>
+            <rect x="112" y="164" width="72" height="20" rx="6" ry="6" fill="#5E6B4E"/>
+            <line x1="130" y1="164" x2="130" y2="184" stroke="#4C573E" strokeWidth="3"/>
+            <line x1="148" y1="164" x2="148" y2="184" stroke="#4C573E" strokeWidth="3"/>
+            <line x1="166" y1="164" x2="166" y2="184" stroke="#4C573E" strokeWidth="3"/>
+            <circle cx="48" cy="120" r="16" fill="#6B7F5A"/>
+            <circle cx="248" cy="120" r="16" fill="#6B7F5A"/>
+            <circle cx="48" cy="120" r="6" fill="#3B432F"/>
+            <circle cx="248" cy="120" r="6" fill="#3B432F"/>
+          </g>
         </svg>
       </div>
       <span
@@ -36,7 +49,7 @@ export function Logo({ variant = "dark", className }: LogoProps) {
           variant === "dark" ? "text-forest" : "text-white"
         )}
       >
-        Doc<span className={variant === "dark" ? "text-golden-dark" : "text-golden"}>MD</span>
+        MD<span className={variant === "dark" ? "text-golden-dark" : "text-golden"}>Doc</span>
       </span>
     </Link>
   );
