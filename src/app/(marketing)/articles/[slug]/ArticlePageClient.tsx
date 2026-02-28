@@ -215,7 +215,7 @@ function ArticleCta() {
             href="/convert"
             className="inline-flex items-center gap-2 bg-golden text-forest-dark font-semibold px-8 py-3.5 rounded-full hover:bg-golden-light transition-all hover:-translate-y-px shadow-lg shadow-black/15"
           >
-            Try DocMD free
+            Try MDDoc free
           </Link>
         </motion.div>
       </Container>

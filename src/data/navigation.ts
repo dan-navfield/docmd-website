@@ -28,7 +28,7 @@ export const navLinks: NavItem[] = [
     label: "Resources",
     children: [
       { label: "Articles", href: "/articles", description: "Guides, tips, and insights" },
-      { label: "Compare", href: "/compare", description: "See how DocMD stacks up" },
+      { label: "Compare", href: "/compare", description: "See how MDDoc stacks up" },
       { label: "Use Cases", href: "/use-cases", description: "Solutions by role" },
       { label: "Docs", href: "/docs", description: "API reference and guides" },
     ],

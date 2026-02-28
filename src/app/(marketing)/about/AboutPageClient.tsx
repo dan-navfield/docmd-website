@@ -38,10 +38,10 @@ function AboutHero() {
           className="max-w-3xl mx-auto text-center"
         >
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-golden bg-golden/10 px-4 py-1.5 rounded-full mb-6">
-            About DocMD
+            About MDDoc
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
-            We built DocMD because Word templates are{" "}
+            We built MDDoc because Word templates are{" "}
             <GradientText variant="golden">hell.</GradientText>
           </h1>
           <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed">
@@ -251,7 +251,7 @@ function CtaBanner() {
           </h2>
           <p className="text-lg text-white/80 max-w-xl mx-auto mb-10">
             Your markdown deserves better than copy-paste. Give it a real
-            template. Give it DocMD.
+            template. Give it MDDoc.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <MagneticButton
@@ -293,7 +293,7 @@ export function AboutPageClient() {
       <NarrativeSection
         badge="The Moment"
         title="What if your markdown just... became the document?"
-        body={`Not a generic conversion. Not 'close enough.' The actual template. The actual styles. The heading style from row 47 of the style gallery that Carol from compliance insists on.\n\nThat's what DocMD does. It reads your markdown, reads your template, and produces a Word doc that looks like a human spent an hour on it. Except it took two seconds and nobody had to open Word.`}
+        body={`Not a generic conversion. Not 'close enough.' The actual template. The actual styles. The heading style from row 47 of the style gallery that Carol from compliance insists on.\n\nThat's what MDDoc does. It reads your markdown, reads your template, and produces a Word doc that looks like a human spent an hour on it. Except it took two seconds and nobody had to open Word.`}
         bg="cream"
         icon={Zap}
       />
@@ -313,7 +313,7 @@ export function AboutPageClient() {
       <NarrativeSection
         badge="What's Next"
         title="API-first. Automation-ready. Always shipping."
-        body={`DocMD is already API-first. Every feature works through REST endpoints and our MCP server. We're building toward a world where your documentation pipeline is fully automated \u2014 markdown goes in, styled documents come out, and nobody has to think about formatting ever again.\n\nWe ship fast, we listen to users, and we don't build features nobody asked for. If you've got an opinion about how document tooling should work, we want to hear it.`}
+        body={`MDDoc is already API-first. Every feature works through REST endpoints and our MCP server. We're building toward a world where your documentation pipeline is fully automated \u2014 markdown goes in, styled documents come out, and nobody has to think about formatting ever again.\n\nWe ship fast, we listen to users, and we don't build features nobody asked for. If you've got an opinion about how document tooling should work, we want to hear it.`}
         bg="white"
         icon={Server}
       />

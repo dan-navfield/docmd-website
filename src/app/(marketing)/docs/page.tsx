@@ -6,19 +6,19 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Documentation — API Reference & Guides",
   description:
-    "DocMD API documentation. REST endpoints for markdown to Word conversion, template management, MCP server integration, and SharePoint export.",
+    "MDDoc API documentation. REST endpoints for markdown to Word conversion, template management, MCP server integration, and SharePoint export.",
   keywords: [
-    "DocMD API",
+    "MDDoc API",
     "markdown to word API",
     "document conversion API",
     "MCP server",
-    "DocMD documentation",
+    "MDDoc documentation",
   ],
   alternates: {
     canonical: "/docs",
   },
   openGraph: {
-    title: "Documentation — API Reference & Guides | DocMD",
+    title: "Documentation — API Reference & Guides | MDDoc",
     description:
       "REST API, MCP server, and webhook docs for automating markdown to Word conversion.",
     url: "/docs",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Documentation — API Reference & Guides | DocMD",
+    title: "Documentation — API Reference & Guides | MDDoc",
     description:
       "REST API, MCP server, and webhook docs for automating markdown to Word conversion.",
   },
@@ -36,7 +36,7 @@ function SoftwareApplicationSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "DocMD API",
+    name: "MDDoc API",
     applicationCategory: "DeveloperApplication",
     operatingSystem: "Any",
     description:

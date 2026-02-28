@@ -51,12 +51,12 @@ function ArticleSchemas({
     url: `https://mddoc.app/articles/${article.slug}`,
     publisher: {
       "@type": "Organization",
-      name: "DocMD",
+      name: "MDDoc",
       url: "https://mddoc.app",
     },
     author: {
       "@type": "Organization",
-      name: "DocMD",
+      name: "MDDoc",
     },
   };
 

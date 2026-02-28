@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: "/features",
   },
   openGraph: {
-    title: "Features — AI Classification, Custom Templates & More | DocMD",
+    title: "Features — AI Classification, Custom Templates & More | MDDoc",
     description:
       "Markdown to Word conversion, AI document classification, custom templates, SharePoint export, and REST API.",
     url: "/features",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Features — AI Classification, Custom Templates & More | DocMD",
+    title: "Features — AI Classification, Custom Templates & More | MDDoc",
     description:
       "Markdown to Word conversion, AI document classification, custom templates, SharePoint export, and REST API.",
   },
@@ -37,7 +37,7 @@ function SoftwareApplicationSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "DocMD",
+    name: "MDDoc",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Any",
     description:

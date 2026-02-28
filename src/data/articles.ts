@@ -37,7 +37,7 @@ export const articles: Article[] = [
       {
         heading: "Method 1: Online converter (fastest)",
         content: `<p>The fastest path from markdown to Word is a browser-based converter. Paste your markdown, see a preview, click a button, download a .docx.</p>
-<p><strong>How it works with DocMD:</strong></p>
+<p><strong>How it works with MDDoc:</strong></p>
 <ol>
 <li>Go to <a href="/convert">mddoc.app/convert</a></li>
 <li>Paste your markdown into the editor (or type directly)</li>
@@ -79,7 +79,7 @@ export const articles: Article[] = [
       {
         heading: "Method 4: API automation (for teams and pipelines)",
         content: `<p>If your team converts documents regularly — or you're building a product that generates Word output — an API is the right tool.</p>
-<p><strong>How it works with DocMD's API:</strong></p>
+<p><strong>How it works with MDDoc's API:</strong></p>
 <ol>
 <li>Send a POST request with your markdown content</li>
 <li>Optionally specify a template ID for branded output</li>
@@ -157,7 +157,7 @@ export const articles: Article[] = [
         heading: "Bridge the gap, don't fight it",
         content: `<p>The answer isn't to convince your clients to accept markdown files. It's not to start writing in Word. Both sides of the gap are entrenched for good reasons.</p>
 <p>The answer is a bridge that's so fast you forget it's there. Write in markdown because that's where you think best. Convert to Word because that's what the other side needs. Make the conversion instant, consistent, and branded.</p>
-<p>That's what <a href="/convert">DocMD</a> does. Paste your markdown, see a preview, download a .docx that looks like your team produced it in Word from scratch. Custom templates mean your brand shows up automatically. AI classification picks the right template without you thinking about it.</p>
+<p>That's what <a href="/convert">MDDoc</a> does. Paste your markdown, see a preview, download a .docx that looks like your team produced it in Word from scratch. Custom templates mean your brand shows up automatically. AI classification picks the right template without you thinking about it.</p>
 <p>The gap between markdown and Word isn't going away. But the time you spend bridging it can go to zero.</p>`,
       },
     ],
@@ -194,7 +194,7 @@ export const articles: Article[] = [
 <ol>
 <li><strong>Generate your content</strong> in ChatGPT, Claude, or any AI tool. Don't worry about formatting — let the AI write in its natural markdown.</li>
 <li><strong>Copy the raw markdown</strong> — including the <code>#</code> symbols, <code>**bold**</code> markers, and all. You want the source, not the rendered version.</li>
-<li><strong>Paste into <a href="/convert">DocMD's converter</a></strong> — the editor accepts raw markdown and shows you a live preview instantly.</li>
+<li><strong>Paste into <a href="/convert">MDDoc's converter</a></strong> — the editor accepts raw markdown and shows you a live preview instantly.</li>
 <li><strong>Check the preview</strong> — make sure headings, tables, lists, and code blocks look right. Edit in the markdown editor if anything needs adjusting.</li>
 <li><strong>Click Convert &amp; Download</strong> — your .docx downloads with proper Word styles, clean formatting, and professional typography.</li>
 </ol>
@@ -204,7 +204,7 @@ export const articles: Article[] = [
         heading: "Custom templates for branded AI output",
         content: `<p>The basic conversion handles formatting. But what about branding?</p>
 <p>If you're generating proposals, reports, or documentation for clients, you need the output to look like it came from your organization. Your logo in the header. Your fonts. Your color scheme. Your footer with contact information.</p>
-<p>With DocMD Pro, you upload your Word template once. Every conversion after that uses your brand automatically. The AI writes the content, DocMD applies your brand. Your client sees a polished document that looks like your team spent an hour on it.</p>
+<p>With MDDoc Pro, you upload your Word template once. Every conversion after that uses your brand automatically. The AI writes the content, MDDoc applies your brand. Your client sees a polished document that looks like your team spent an hour on it.</p>
 <p>For teams doing this at scale — generating dozens of documents per week from AI content — the <a href="/docs/api-reference">API</a> lets you automate the entire pipeline. Send markdown in, get branded .docx out, push to SharePoint or email it directly.</p>`,
       },
       {
@@ -212,8 +212,8 @@ export const articles: Article[] = [
         content: `<ul>
 <li><strong>Ask the AI for consistent heading levels.</strong> Tell it to use <code>##</code> for main sections and <code>###</code> for subsections. This maps cleanly to Word's heading hierarchy.</li>
 <li><strong>Request markdown tables.</strong> If your document needs data tables, explicitly ask the AI to format them as markdown tables. Most AI tools will comply.</li>
-<li><strong>Don't fight the markdown.</strong> If the AI outputs code blocks, let it. DocMD will format them properly in Word. Trying to "clean up" markdown before conversion usually makes things worse.</li>
-<li><strong>Use the preview.</strong> Glance at the DocMD preview before converting. It takes two seconds and catches issues like a heading level that's off or a table that didn't parse correctly.</li>
+<li><strong>Don't fight the markdown.</strong> If the AI outputs code blocks, let it. MDDoc will format them properly in Word. Trying to "clean up" markdown before conversion usually makes things worse.</li>
+<li><strong>Use the preview.</strong> Glance at the MDDoc preview before converting. It takes two seconds and catches issues like a heading level that's off or a table that didn't parse correctly.</li>
 <li><strong>Batch your conversions.</strong> If you're generating multiple documents, collect them and convert in a session rather than one at a time. Or use the API to automate the whole batch.</li>
 </ul>
 <p>AI is changing how documents get written. The content creation step is faster than ever. Don't let the conversion step become the new bottleneck.</p>`,
@@ -225,7 +225,7 @@ export const articles: Article[] = [
     title: "How to Create a Word Template That Works With Markdown Conversion",
     metaTitle: "Create a Word Template for Markdown Conversion",
     metaDescription:
-      "Learn how to set up a Word template with proper heading styles, fonts, and formatting that works perfectly with markdown to Word conversion tools like DocMD.",
+      "Learn how to set up a Word template with proper heading styles, fonts, and formatting that works perfectly with markdown to Word conversion tools like MDDoc.",
     excerpt:
       "A good Word template makes every converted document look professional automatically. Here's how to set one up — the right styles, the right structure, and the mistakes to avoid.",
     category: "guide",
@@ -267,7 +267,7 @@ export const articles: Article[] = [
         heading: "Style your special elements",
         content: `<p>Beyond headings and body text, markdown uses several elements that need dedicated styles:</p>
 <p><strong>Tables:</strong> Word has table styles that control borders, shading, header rows, and cell padding. Pick or create a table style that matches your brand. Light borders work better than heavy ones for most documents. Alternating row shading improves readability.</p>
-<p><strong>Code blocks:</strong> For inline code and fenced code blocks, you want a monospace font (like Consolas, Fira Code, or Courier New) on a light gray background. Create or modify a style for this — DocMD maps code blocks to a style you can customize.</p>
+<p><strong>Code blocks:</strong> For inline code and fenced code blocks, you want a monospace font (like Consolas, Fira Code, or Courier New) on a light gray background. Create or modify a style for this — MDDoc maps code blocks to a style you can customize.</p>
 <p><strong>Block quotes:</strong> Markdown's <code>&gt;</code> syntax creates block quotes. Style these with a left border, slight indent, and italic or lighter font color. They should look distinct from body text without being distracting.</p>
 <p><strong>Hyperlinks:</strong> Your brand probably has a link color. Set it in the Hyperlink style. Underlined or not is your call — both are common in professional documents.</p>`,
       },
@@ -282,15 +282,15 @@ export const articles: Article[] = [
 </ul>`,
       },
       {
-        heading: "Using your template with DocMD",
+        heading: "Using your template with MDDoc",
         content: `<p>Once your template is ready:</p>
 <ol>
-<li><strong>Upload it</strong> to DocMD through the template management dashboard.</li>
+<li><strong>Upload it</strong> to MDDoc through the template management dashboard.</li>
 <li><strong>Map your styles</strong> using the visual editor — connect markdown elements to your template's style names. If you used standard names (Heading 1, Heading 2, Normal), most mappings happen automatically.</li>
 <li><strong>Test with a sample document</strong> — paste some markdown with headings, tables, code blocks, and lists. Convert and check the output.</li>
 <li><strong>Adjust and re-upload</strong> if anything looks off. Usually it's a spacing tweak or a font size adjustment.</li>
 </ol>
-<p>After this initial setup, every conversion uses your template automatically. If you have multiple templates for different document types (proposals, reports, documentation), DocMD's <a href="/features">AI classification</a> can pick the right one based on the content.</p>
+<p>After this initial setup, every conversion uses your template automatically. If you have multiple templates for different document types (proposals, reports, documentation), MDDoc's <a href="/features">AI classification</a> can pick the right one based on the content.</p>
 <p>A good template is the difference between "converted markdown" and "a professional document that happens to have been written in markdown." Spend the time to get it right once.</p>`,
       },
     ],
@@ -392,7 +392,7 @@ const result = await convert(markdown);
 <li>Keep list nesting shallow and consistent</li>
 <li>Add meaningful alt text to images</li>
 </ul>
-<p>Adopt these and your Word output improves immediately — whether you're converting through <a href="/convert">DocMD</a>, Pandoc, or any other tool. Good markdown is good markdown, regardless of what converts it.</p>`,
+<p>Adopt these and your Word output improves immediately — whether you're converting through <a href="/convert">MDDoc</a>, Pandoc, or any other tool. Good markdown is good markdown, regardless of what converts it.</p>`,
       },
     ],
   },

@@ -15,10 +15,10 @@ export interface UseCase {
 export const useCases: UseCase[] = [
   {
     slug: "developers",
-    title: "DocMD for Developers",
+    title: "MDDoc for Developers",
     metaTitle: "Markdown to Word for Developers",
     metaDescription:
-      "Convert READMEs, ADRs, and runbooks from markdown to Word without leaving your workflow. DocMD handles formatting so you ship documents, not fiddle with styles.",
+      "Convert READMEs, ADRs, and runbooks from markdown to Word without leaving your workflow. MDDoc handles formatting so you ship documents, not fiddle with styles.",
     persona: "Developers",
     headline: "Write markdown. Ship Word docs.",
     subtitle:
@@ -64,7 +64,7 @@ export const useCases: UseCase[] = [
       {
         title: "AI classification picks the right template",
         description:
-          "Writing an ADR? A runbook? Meeting notes? DocMD's AI detects the document type and applies the right template automatically. No manual selection.",
+          "Writing an ADR? A runbook? Meeting notes? MDDoc's AI detects the document type and applies the right template automatically. No manual selection.",
       },
     ],
     workflow: [
@@ -76,9 +76,9 @@ export const useCases: UseCase[] = [
       },
       {
         step: 2,
-        title: "Paste into DocMD",
+        title: "Paste into MDDoc",
         description:
-          "Copy your markdown and paste it into the DocMD converter. Or send it via the API if you've automated the workflow.",
+          "Copy your markdown and paste it into the MDDoc converter. Or send it via the API if you've automated the workflow.",
       },
       {
         step: 3,
@@ -95,7 +95,7 @@ export const useCases: UseCase[] = [
     ],
     faqs: [
       {
-        question: "Does DocMD handle code blocks properly?",
+        question: "Does MDDoc handle code blocks properly?",
         answer:
           "Yes. Fenced code blocks convert to styled monospace text with a shaded background in Word. Inline code renders in monospace too. It looks like properly formatted code, not plain text in the wrong font.",
       },
@@ -112,7 +112,7 @@ export const useCases: UseCase[] = [
       {
         question: "Can I use this with my existing documentation in git?",
         answer:
-          "Absolutely. Your markdown stays in git as the source of truth. When you need a Word version, convert it through DocMD. The markdown source is never modified.",
+          "Absolutely. Your markdown stays in git as the source of truth. When you need a Word version, convert it through MDDoc. The markdown source is never modified.",
       },
       {
         question: "What about large documents?",
@@ -123,14 +123,14 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "technical-writers",
-    title: "DocMD for Technical Writers",
+    title: "MDDoc for Technical Writers",
     metaTitle: "Markdown to Word for Technical Writers",
     metaDescription:
-      "Write documentation in markdown, deliver in branded Word templates. DocMD gives technical writers consistent, professional output without manual formatting.",
+      "Write documentation in markdown, deliver in branded Word templates. MDDoc gives technical writers consistent, professional output without manual formatting.",
     persona: "Technical Writers",
     headline: "Write once. Deliver everywhere.",
     subtitle:
-      "Draft in markdown for speed and version control. Deliver in branded Word templates your stakeholders expect. DocMD handles the conversion so you focus on content.",
+      "Draft in markdown for speed and version control. Deliver in branded Word templates your stakeholders expect. MDDoc handles the conversion so you focus on content.",
     painPoints: [
       {
         title: "Maintaining two formats",
@@ -186,7 +186,7 @@ export const useCases: UseCase[] = [
         step: 2,
         title: "Set up your template (once)",
         description:
-          "Upload your branded Word template and map styles using DocMD's visual editor. This is a one-time setup per template.",
+          "Upload your branded Word template and map styles using MDDoc's visual editor. This is a one-time setup per template.",
       },
       {
         step: 3,
@@ -210,7 +210,7 @@ export const useCases: UseCase[] = [
       {
         question: "How does the style mapping work?",
         answer:
-          "DocMD's visual editor shows each markdown element (headings, body text, code, tables) alongside your template's Word styles. You connect them visually. When you convert, those mappings determine how the Word output is styled.",
+          "MDDoc's visual editor shows each markdown element (headings, body text, code, tables) alongside your template's Word styles. You connect them visually. When you convert, those mappings determine how the Word output is styled.",
       },
       {
         question: "Can I collaborate with engineers who use markdown and PMs who use Word?",
@@ -223,7 +223,7 @@ export const useCases: UseCase[] = [
           "Upload the new template and update your style mappings if needed. All future conversions use the new brand automatically. Existing documents can be re-converted from their markdown source to get the new look.",
       },
       {
-        question: "Does DocMD handle tables and figures properly?",
+        question: "Does MDDoc handle tables and figures properly?",
         answer:
           "Yes. Tables convert with clean formatting, proper borders, and header row styling. Images referenced in markdown are embedded in the Word output. Both respect your template's styles.",
       },
@@ -231,12 +231,12 @@ export const useCases: UseCase[] = [
   },
   {
     slug: "ai-teams",
-    title: "DocMD for AI Teams",
+    title: "MDDoc for AI Teams",
     metaTitle: "Markdown to Word for AI Teams",
     metaDescription:
       "Turn AI-generated markdown from ChatGPT, Claude, and Copilot into client-ready Word documents. Automate the last mile to professional delivery.",
     persona: "AI Teams",
-    headline: "AI writes it. DocMD formats it.",
+    headline: "AI writes it. MDDoc formats it.",
     subtitle:
       "Turn ChatGPT, Claude, and Copilot output into client-ready Word documents. Automate the last mile between AI generation and professional delivery.",
     painPoints: [
@@ -265,22 +265,22 @@ export const useCases: UseCase[] = [
       {
         title: "Direct AI-to-Word pipeline",
         description:
-          "Paste AI-generated markdown into DocMD and get a properly formatted Word document in seconds. All the structure the AI created — headings, tables, lists, code — converts cleanly.",
+          "Paste AI-generated markdown into MDDoc and get a properly formatted Word document in seconds. All the structure the AI created — headings, tables, lists, code — converts cleanly.",
       },
       {
         title: "Branded output from AI content",
         description:
-          "Your Word template is applied automatically. The AI writes the content, DocMD applies your brand. Clients see a polished document that looks hand-crafted.",
+          "Your Word template is applied automatically. The AI writes the content, MDDoc applies your brand. Clients see a polished document that looks hand-crafted.",
       },
       {
         title: "API for automated pipelines",
         description:
-          "Connect your AI generation pipeline to DocMD's API. AI generates markdown, API converts to branded Word, output goes to SharePoint or email. Fully automated, zero manual steps.",
+          "Connect your AI generation pipeline to MDDoc's API. AI generates markdown, API converts to branded Word, output goes to SharePoint or email. Fully automated, zero manual steps.",
       },
       {
         title: "AI classification for smart templating",
         description:
-          "DocMD's AI detects whether the content is a proposal, report, spec, or meeting notes — and applies the right template automatically. Your team doesn't need to think about templates.",
+          "MDDoc's AI detects whether the content is a proposal, report, spec, or meeting notes — and applies the right template automatically. Your team doesn't need to think about templates.",
       },
     ],
     workflow: [
@@ -292,9 +292,9 @@ export const useCases: UseCase[] = [
       },
       {
         step: 2,
-        title: "Paste into DocMD",
+        title: "Paste into MDDoc",
         description:
-          "Copy the raw markdown output (including the # and ** symbols) and paste it into DocMD's converter. The live preview shows your formatted document instantly.",
+          "Copy the raw markdown output (including the # and ** symbols) and paste it into MDDoc's converter. The live preview shows your formatted document instantly.",
       },
       {
         step: 3,
@@ -306,24 +306,24 @@ export const useCases: UseCase[] = [
         step: 4,
         title: "Deliver to clients",
         description:
-          "Send the Word document to your client, stakeholder, or team. It looks like your team spent an hour on formatting. The AI wrote it in seconds, DocMD converted it in seconds.",
+          "Send the Word document to your client, stakeholder, or team. It looks like your team spent an hour on formatting. The AI wrote it in seconds, MDDoc converted it in seconds.",
       },
     ],
     faqs: [
       {
-        question: "Which AI tools work with DocMD?",
+        question: "Which AI tools work with MDDoc?",
         answer:
-          "Any AI tool that outputs markdown — ChatGPT, Claude, GitHub Copilot, Gemini, Mistral, and others. If the AI generates text with # headings, **bold**, and - lists, DocMD converts it to Word.",
+          "Any AI tool that outputs markdown — ChatGPT, Claude, GitHub Copilot, Gemini, Mistral, and others. If the AI generates text with # headings, **bold**, and - lists, MDDoc converts it to Word.",
       },
       {
         question: "Can I automate the AI-to-Word pipeline?",
         answer:
-          "Yes. Use DocMD's REST API to send AI-generated markdown and receive a .docx file programmatically. This works in any automation pipeline — n8n, Zapier, custom scripts, or direct API integration.",
+          "Yes. Use MDDoc's REST API to send AI-generated markdown and receive a .docx file programmatically. This works in any automation pipeline — n8n, Zapier, custom scripts, or direct API integration.",
       },
       {
         question: "How do I handle AI output that needs editing?",
         answer:
-          "Edit the markdown in DocMD's editor before converting. The live preview updates as you type, so you can refine the AI's output and see exactly what the Word document will look like before downloading.",
+          "Edit the markdown in MDDoc's editor before converting. The live preview updates as you type, so you can refine the AI's output and see exactly what the Word document will look like before downloading.",
       },
       {
         question: "Can multiple team members use the same templates?",
@@ -333,7 +333,7 @@ export const useCases: UseCase[] = [
       {
         question: "What about confidential or sensitive content?",
         answer:
-          "DocMD processes your content over HTTPS and discards it immediately after conversion. We don't store, log, or train on your documents. Your content is yours.",
+          "MDDoc processes your content over HTTPS and discards it immediately after conversion. We don't store, log, or train on your documents. Your content is yours.",
       },
     ],
   },

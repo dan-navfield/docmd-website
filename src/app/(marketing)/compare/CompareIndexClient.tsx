@@ -25,7 +25,7 @@ export function CompareIndexClient() {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
-              Compare DocMD
+              Compare MDDoc
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
               Fair, detailed comparisons to help you pick the right tool for your workflow.

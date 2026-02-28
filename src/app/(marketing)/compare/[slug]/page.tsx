@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: comparison.metaTitle,
     description: comparison.metaDescription,
-    keywords: [comparison.competitorName, "DocMD", "markdown to word", "comparison", "alternative"],
+    keywords: [comparison.competitorName, "MDDoc", "markdown to word", "comparison", "alternative"],
     alternates: { canonical: `/compare/${slug}` },
     openGraph: {
       title: comparison.metaTitle,
@@ -40,7 +40,7 @@ function ComparisonSchemas({ comparison }: { comparison: typeof comparisons[numb
     headline: comparison.title,
     description: comparison.metaDescription,
     url: `https://mddoc.app/compare/${comparison.slug}`,
-    publisher: { "@type": "Organization", name: "DocMD", url: "https://mddoc.app" },
+    publisher: { "@type": "Organization", name: "MDDoc", url: "https://mddoc.app" },
   };
   const faq = {
     "@context": "https://schema.org",

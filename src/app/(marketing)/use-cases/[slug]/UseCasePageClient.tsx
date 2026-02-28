@@ -115,7 +115,7 @@ export function UseCasePageClient({ useCase }: { useCase: UseCase }) {
               The Solution
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-              How DocMD helps
+              How MDDoc helps
             </h2>
           </motion.div>
 
@@ -162,7 +162,7 @@ export function UseCasePageClient({ useCase }: { useCase: UseCase }) {
               Workflow
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-              Your workflow with DocMD
+              Your workflow with MDDoc
             </h2>
           </motion.div>
 
@@ -271,7 +271,7 @@ export function UseCasePageClient({ useCase }: { useCase: UseCase }) {
                 href="/convert"
                 className="inline-flex items-center justify-center gap-2 bg-golden text-forest-dark font-semibold px-8 py-3 rounded-full text-lg hover:bg-golden-dark transition-all shadow-lg"
               >
-                Try DocMD free
+                Try MDDoc free
               </Link>
               <Link
                 href="/pricing"

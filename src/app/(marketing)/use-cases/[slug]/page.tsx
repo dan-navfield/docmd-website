@@ -48,7 +48,7 @@ function UseCaseSchemas({
     url: `https://mddoc.app/use-cases/${useCase.slug}`,
     publisher: {
       "@type": "Organization",
-      name: "DocMD",
+      name: "MDDoc",
       url: "https://mddoc.app",
     },
   };

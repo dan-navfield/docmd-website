@@ -88,7 +88,7 @@ export function ComparePageClient({ comparison }: { comparison: ComparisonPage }
                         Feature
                       </th>
                       <th className="px-6 py-4 text-sm font-semibold text-forest uppercase tracking-wider text-center">
-                        DocMD
+                        MDDoc
                       </th>
                       <th className="px-6 py-4 text-sm font-semibold text-warm-gray uppercase tracking-wider text-center">
                         {comparison.competitorName}
@@ -105,7 +105,7 @@ export function ComparePageClient({ comparison }: { comparison: ComparisonPage }
                           {row.feature}
                         </td>
                         <td className="px-6 py-4 text-center">
-                          <CellValue value={row.docmd} />
+                          <CellValue value={row.mddoc} />
                         </td>
                         <td className="px-6 py-4 text-center">
                           <CellValue value={row.competitor} />
@@ -134,10 +134,10 @@ export function ComparePageClient({ comparison }: { comparison: ComparisonPage }
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-              {/* DocMD strengths */}
+              {/* MDDoc strengths */}
               <GlowCard className="p-8">
                 <h3 className="text-lg font-bold text-forest mb-4">
-                  DocMD strengths
+                  MDDoc strengths
                 </h3>
                 <ul className="space-y-3">
                   {comparison.prosDocmd.map((pro) => (
@@ -186,10 +186,10 @@ export function ComparePageClient({ comparison }: { comparison: ComparisonPage }
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-              {/* Use DocMD when */}
+              {/* Use MDDoc when */}
               <GlowCard className="p-8">
                 <h3 className="text-lg font-bold text-forest mb-4">
-                  Use DocMD when...
+                  Use MDDoc when...
                 </h3>
                 <ul className="space-y-3">
                   {comparison.useDocmdWhen.map((item) => (
@@ -266,7 +266,7 @@ export function ComparePageClient({ comparison }: { comparison: ComparisonPage }
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">
-              Ready to try DocMD?
+              Ready to try MDDoc?
             </h2>
             <p className="text-lg text-white/80 max-w-xl mx-auto mb-10">
               See the difference for yourself. Convert a document in seconds — no signup required.

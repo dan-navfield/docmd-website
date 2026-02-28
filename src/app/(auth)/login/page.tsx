@@ -53,7 +53,7 @@ export default function LoginPage() {
             Welcome back
           </h1>
           <p className="mt-2 text-sm text-muted-foreground">
-            Log in to your DocMD account
+            Log in to your MDDoc account
           </p>
         </div>
 

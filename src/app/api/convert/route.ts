@@ -581,7 +581,7 @@ export async function POST(request: NextRequest) {
       headers: {
         "Content-Type":
           "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-        "Content-Disposition": 'attachment; filename="docmd-output.docx"',
+        "Content-Disposition": 'attachment; filename="mddoc-output.docx"',
         "Content-Length": buffer.byteLength.toString(),
       },
     });

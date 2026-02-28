@@ -72,7 +72,7 @@ export const tiers = [
 
 export const faqs = [
   {
-    question: "Can I try DocMD without signing up?",
+    question: "Can I try MDDoc without signing up?",
     answer:
       "Yes. Head to the Convert page and convert a document right now. No account needed. You get 3 free conversions to kick the tires.",
   },
@@ -84,12 +84,12 @@ export const faqs = [
   {
     question: "Can I bring my own AI keys?",
     answer:
-      "Yes. DocMD supports both Anthropic Claude and OpenAI GPT. You plug in your own API key and pay those providers directly. We never see your keys.",
+      "Yes. MDDoc supports both Anthropic Claude and OpenAI GPT. You plug in your own API key and pay those providers directly. We never see your keys.",
   },
   {
     question: "What's the difference between basic and custom templates?",
     answer:
-      "Basic templates are the ones we provide — clean, professional, ready to go. Custom templates are your own Word .docx files with your org's branding, fonts, and styles. Upload them and DocMD uses them for conversion.",
+      "Basic templates are the ones we provide — clean, professional, ready to go. Custom templates are your own Word .docx files with your org's branding, fonts, and styles. Upload them and MDDoc uses them for conversion.",
   },
   {
     question: "Do you offer annual billing?",

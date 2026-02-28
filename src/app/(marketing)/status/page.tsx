@@ -6,22 +6,22 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "System Status",
   description:
-    "Current operational status of DocMD services including the conversion API, web application, AI classification, SharePoint integration, and MCP server.",
+    "Current operational status of MDDoc services including the conversion API, web application, AI classification, SharePoint integration, and MCP server.",
   alternates: {
     canonical: "/status",
   },
   openGraph: {
-    title: "System Status | DocMD",
+    title: "System Status | MDDoc",
     description:
-      "Current operational status of all DocMD services.",
+      "Current operational status of all MDDoc services.",
     url: "/status",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "System Status | DocMD",
+    title: "System Status | MDDoc",
     description:
-      "Current operational status of all DocMD services.",
+      "Current operational status of all MDDoc services.",
   },
 };
 

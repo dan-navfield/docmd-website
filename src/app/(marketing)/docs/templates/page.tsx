@@ -7,9 +7,9 @@ import { CodeBlock } from "@/components/docs/CodeBlock";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Templates & Mappings — DocMD Documentation",
+  title: "Templates & Mappings — MDDoc Documentation",
   description:
-    "How DocMD templates and style mappings work. Upload Word templates, extract styles, and define rules that connect markdown to Word formatting.",
+    "How MDDoc templates and style mappings work. Upload Word templates, extract styles, and define rules that connect markdown to Word formatting.",
   alternates: { canonical: "/docs/templates" },
 };
 
@@ -29,19 +29,19 @@ export default function TemplatesPage() {
         <p className="text-bark-light leading-relaxed mb-4">
           A template is a regular Word .docx file. It contains the styles,
           fonts, headers, footers, and page layout you want in your output
-          documents. Think of it as the shell — DocMD pours your markdown
+          documents. Think of it as the shell — MDDoc pours your markdown
           content into it.
         </p>
         <p className="text-bark-light leading-relaxed mb-4">
           You create templates in Word (or Google Docs exported as .docx). Then
-          you upload them to DocMD. Every template gets versioned — update it
+          you upload them to MDDoc. Every template gets versioned — update it
           whenever your branding changes.
         </p>
         <div className="bg-golden/10 border-l-4 border-golden rounded-r-lg p-4 mb-6">
           <p className="text-sm text-bark">
             <span className="font-semibold">Templates are managed via the dashboard.</span>{" "}
             The public API provides read-only access for listing templates and
-            their styles. Upload and edit templates in the DocMD web app.
+            their styles. Upload and edit templates in the MDDoc web app.
           </p>
         </div>
       </section>
@@ -54,7 +54,7 @@ export default function TemplatesPage() {
         <ul className="space-y-2 text-bark-light list-disc list-inside mb-6">
           <li>
             <span className="font-medium text-foreground">Cover page</span> —
-            automatically preserved. DocMD keeps the first section of your
+            automatically preserved. MDDoc keeps the first section of your
             template as-is and can update the title from your first H1.
           </li>
           <li>
@@ -89,7 +89,7 @@ export default function TemplatesPage() {
           Style extraction
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          When you upload a template, DocMD reads every paragraph and character
+          When you upload a template, MDDoc reads every paragraph and character
           style defined in the .docx file. You can see the full list via the
           dashboard or API:
         </p>
@@ -97,7 +97,7 @@ export default function TemplatesPage() {
           language="bash"
           title="Get template styles (internal API)"
           code={`curl https://api.mddoc.app/api/templates/TEMPLATE_ID/styles \\
-  -H "Authorization: Bearer docmd_YOUR_KEY"`}
+  -H "Authorization: Bearer mddoc_YOUR_KEY"`}
         />
         <CodeBlock
           language="json"
@@ -134,7 +134,7 @@ export default function TemplatesPage() {
           What are mappings?
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          A mapping is a set of rules that tell DocMD which Word style to apply
+          A mapping is a set of rules that tell MDDoc which Word style to apply
           for each markdown element. Heading 1 becomes &quot;Heading 1&quot; in
           Word. A bullet list becomes &quot;List Bullet.&quot; A code block
           becomes your &quot;Code&quot; style.
@@ -334,7 +334,7 @@ export default function TemplatesPage() {
           How conversion uses mappings
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          When DocMD converts your markdown, it:
+          When MDDoc converts your markdown, it:
         </p>
         <ol className="list-decimal list-inside space-y-2 mb-6 text-bark-light">
           <li>Parses the markdown into a structured AST (abstract syntax tree)</li>
@@ -399,7 +399,7 @@ export default function TemplatesPage() {
       <section className="mt-10">
         <h2 className="text-2xl font-bold text-foreground mb-4">Next</h2>
         <p className="text-bark-light leading-relaxed">
-          Learn how to use DocMD directly from your AI assistant with the{" "}
+          Learn how to use MDDoc directly from your AI assistant with the{" "}
           <Link
             href="/docs/mcp-server"
             className="text-forest hover:text-forest-dark font-medium underline underline-offset-2"

@@ -82,7 +82,7 @@ function StatusHero() {
             <GradientText variant="golden">operational</GradientText>
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-            Current status of DocMD services. We monitor everything
+            Current status of MDDoc services. We monitor everything
             continuously.
           </p>
         </motion.div>

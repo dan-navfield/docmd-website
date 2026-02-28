@@ -7,9 +7,9 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Pricing — Solo, Team & Enterprise Plans",
   description:
-    "DocMD pricing starts at $10/month for Solo. Team plans at $49/month with unlimited conversions. Enterprise plans with custom templates and dedicated support.",
+    "MDDoc pricing starts at $10/month for Solo. Team plans at $49/month with unlimited conversions. Enterprise plans with custom templates and dedicated support.",
   keywords: [
-    "DocMD pricing",
+    "MDDoc pricing",
     "markdown converter pricing",
     "document automation pricing",
     "team document tools",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "/pricing",
   },
   openGraph: {
-    title: "Pricing — Solo, Team & Enterprise Plans | DocMD",
+    title: "Pricing — Solo, Team & Enterprise Plans | MDDoc",
     description:
       "Plans from $10/month. Try free on the Convert page. Solo, Team, and Enterprise tiers.",
     url: "/pricing",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pricing — Solo, Team & Enterprise Plans | DocMD",
+    title: "Pricing — Solo, Team & Enterprise Plans | MDDoc",
     description:
       "Plans from $10/month. Try free on the Convert page. Solo, Team, and Enterprise tiers.",
   },
@@ -36,7 +36,7 @@ function ProductSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "DocMD",
+    name: "MDDoc",
     description:
       "AI-powered markdown to Word document conversion platform with custom templates and enterprise integrations.",
     offers: [

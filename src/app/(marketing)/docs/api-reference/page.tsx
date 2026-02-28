@@ -7,9 +7,9 @@ import { CodeBlock } from "@/components/docs/CodeBlock";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "API Reference — DocMD Documentation",
+  title: "API Reference — MDDoc Documentation",
   description:
-    "Complete API reference for DocMD. Endpoints for markdown-to-Word conversion, template listing, mapping management, and conversion downloads.",
+    "Complete API reference for MDDoc. Endpoints for markdown-to-Word conversion, template listing, mapping management, and conversion downloads.",
   alternates: { canonical: "/docs/api-reference" },
 };
 
@@ -276,7 +276,7 @@ export default function ApiReferencePage() {
           language="bash"
           title="Convert with binary response"
           code={`curl -X POST https://api.mddoc.app/api/v1/convert \\
-  -H "Authorization: Bearer docmd_YOUR_KEY" \\
+  -H "Authorization: Bearer mddoc_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
     "markdown": "# Quarterly Report\\n\\n## Summary\\n\\nRevenue grew 15%.",
@@ -360,7 +360,7 @@ export default function ApiReferencePage() {
           language="bash"
           title="Download a conversion"
           code={`curl https://api.mddoc.app/api/v1/conversions/CONVERSION_ID/download \\
-  -H "Authorization: Bearer docmd_YOUR_KEY" \\
+  -H "Authorization: Bearer mddoc_YOUR_KEY" \\
   -o output.docx`}
         />
       </section>

@@ -59,14 +59,14 @@ export const detailedFeatures = [
   {
     title: "Markdown in. Word out. Perfectly styled.",
     description:
-      "You write in markdown because it's clean, it's fast, and it works with version control. But your org needs Word docs. So you copy-paste into Word, spend an hour fixing styles, and die a little inside. DocMD takes your markdown and applies your org's actual Word template. Headings, lists, tables, code blocks — everything lands in the right style. No manual formatting. No guessing.",
+      "You write in markdown because it's clean, it's fast, and it works with version control. But your org needs Word docs. So you copy-paste into Word, spend an hour fixing styles, and die a little inside. MDDoc takes your markdown and applies your org's actual Word template. Headings, lists, tables, code blocks — everything lands in the right style. No manual formatting. No guessing.",
     badge: "Core Engine",
     visual: "conversion",
   },
   {
     title: "AI that knows what you wrote.",
     description:
-      "Is it a runbook? An ADR? Meeting notes? DocMD's AI reads your document and classifies it automatically. Then it picks the right template, the right mapping, the right folder. You can let it run fully automatic, or review its suggestions first. Your keys, your models — Claude or GPT, you choose.",
+      "Is it a runbook? An ADR? Meeting notes? MDDoc's AI reads your document and classifies it automatically. Then it picks the right template, the right mapping, the right folder. You can let it run fully automatic, or review its suggestions first. Your keys, your models — Claude or GPT, you choose.",
     badge: "AI Agent",
     visual: "classification",
   },
@@ -80,14 +80,14 @@ export const detailedFeatures = [
   {
     title: "One click to SharePoint.",
     description:
-      "You've converted your doc. Now it needs to land in SharePoint. DocMD connects to your Microsoft account, lets you pick the library and folder, and exports directly. Per-user OAuth means everyone uses their own permissions. Full audit trail of every export.",
+      "You've converted your doc. Now it needs to land in SharePoint. MDDoc connects to your Microsoft account, lets you pick the library and folder, and exports directly. Per-user OAuth means everyone uses their own permissions. Full audit trail of every export.",
     badge: "Enterprise",
     visual: "sharepoint",
   },
   {
     title: "Built for automation.",
     description:
-      "Every feature in DocMD is available through the API. Generate API keys, call endpoints, build pipelines. Or use the MCP server to let Claude do the work for you — upload, classify, convert, and export, all from a chat interface. DocMD fits into your workflow, not the other way around.",
+      "Every feature in MDDoc is available through the API. Generate API keys, call endpoints, build pipelines. Or use the MCP server to let Claude do the work for you — upload, classify, convert, and export, all from a chat interface. MDDoc fits into your workflow, not the other way around.",
     badge: "Developer",
     visual: "api",
   },

@@ -7,9 +7,9 @@ import { CodeBlock } from "@/components/docs/CodeBlock";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "SharePoint Export — DocMD Documentation",
+  title: "SharePoint Export — MDDoc Documentation",
   description:
-    "Push converted Word documents directly to SharePoint from DocMD. OAuth setup, destination configuration, and export API.",
+    "Push converted Word documents directly to SharePoint from MDDoc. OAuth setup, destination configuration, and export API.",
   alternates: { canonical: "/docs/sharepoint" },
 };
 
@@ -43,7 +43,7 @@ export default function SharePointPage() {
           1. Connect your Microsoft account
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          From the DocMD dashboard, go to{" "}
+          From the MDDoc dashboard, go to{" "}
           <span className="font-mono text-sm bg-sand px-1.5 py-0.5 rounded">
             Settings → Microsoft
           </span>{" "}
@@ -52,7 +52,7 @@ export default function SharePointPage() {
         </p>
         <p className="text-bark-light leading-relaxed mb-4">
           You&apos;ll be redirected to Microsoft&apos;s login page. Sign in with
-          the account that has access to your SharePoint site. DocMD requests
+          the account that has access to your SharePoint site. MDDoc requests
           these permissions:
         </p>
         <ul className="space-y-2 text-bark-light list-disc list-inside mb-6">
@@ -77,7 +77,7 @@ export default function SharePointPage() {
           language="bash"
           title="Check Microsoft connection"
           code={`curl https://api.mddoc.app/api/settings/microsoft \\
-  -H "Authorization: Bearer docmd_YOUR_KEY"`}
+  -H "Authorization: Bearer mddoc_YOUR_KEY"`}
         />
         <CodeBlock
           language="json"
@@ -103,7 +103,7 @@ export default function SharePointPage() {
           language="bash"
           title="Create a SharePoint destination"
           code={`curl -X POST https://api.mddoc.app/api/projects/PROJECT_ID/destinations \\
-  -H "Authorization: Bearer docmd_YOUR_KEY" \\
+  -H "Authorization: Bearer mddoc_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
     "name": "Engineering Docs",
@@ -138,7 +138,7 @@ export default function SharePointPage() {
           language="bash"
           title="Export to SharePoint"
           code={`curl -X POST https://api.mddoc.app/api/conversions/CONVERSION_ID/export \\
-  -H "Authorization: Bearer docmd_YOUR_KEY" \\
+  -H "Authorization: Bearer mddoc_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{ "destination_id": "your-destination-uuid" }'`}
         />
@@ -161,7 +161,7 @@ export default function SharePointPage() {
           language="bash"
           title="Check export status"
           code={`curl https://api.mddoc.app/api/exports/EXPORT_ID \\
-  -H "Authorization: Bearer docmd_YOUR_KEY"`}
+  -H "Authorization: Bearer mddoc_YOUR_KEY"`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
           Possible status values:{" "}
@@ -190,7 +190,7 @@ export default function SharePointPage() {
           Destination types
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          SharePoint is the primary export target, but DocMD supports three
+          SharePoint is the primary export target, but MDDoc supports three
           destination types:
         </p>
         <div className="overflow-x-auto mb-6">
@@ -245,7 +245,7 @@ export default function SharePointPage() {
           language="bash"
           title="1. Convert"
           code={`CONV_ID=$(curl -s -X POST https://api.mddoc.app/api/v1/convert \\
-  -H "Authorization: Bearer docmd_YOUR_KEY" \\
+  -H "Authorization: Bearer mddoc_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
     "markdown": "# Quarterly Report\\n\\n...",
@@ -258,7 +258,7 @@ export default function SharePointPage() {
           language="bash"
           title="2. Export"
           code={`curl -X POST https://api.mddoc.app/api/conversions/$CONV_ID/export \\
-  -H "Authorization: Bearer docmd_YOUR_KEY" \\
+  -H "Authorization: Bearer mddoc_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{ "destination_id": "DEST_ID" }'`}
         />
@@ -266,7 +266,7 @@ export default function SharePointPage() {
           language="bash"
           title="3. Check status"
           code={`curl https://api.mddoc.app/api/exports/EXPORT_ID \\
-  -H "Authorization: Bearer docmd_YOUR_KEY"`}
+  -H "Authorization: Bearer mddoc_YOUR_KEY"`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
           When the export completes, the document is sitting in your SharePoint
@@ -321,7 +321,7 @@ export default function SharePointPage() {
           That&apos;s everything
         </h2>
         <p className="text-bark-light leading-relaxed">
-          You&apos;ve covered the full DocMD documentation. Go back to the{" "}
+          You&apos;ve covered the full MDDoc documentation. Go back to the{" "}
           <Link
             href="/docs"
             className="text-forest hover:text-forest-dark font-medium underline underline-offset-2"

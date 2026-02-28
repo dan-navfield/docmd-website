@@ -38,7 +38,7 @@ export function PrivacyPageClient() {
             <div>
               <h2 className="text-2xl font-bold text-forest mb-4">The short version</h2>
               <p className="text-bark-light leading-relaxed">
-                We collect the minimum data needed to run DocMD. We don&apos;t sell
+                We collect the minimum data needed to run MDDoc. We don&apos;t sell
                 your data. We don&apos;t read your documents. Your markdown and
                 converted files are yours.
               </p>
@@ -81,7 +81,7 @@ export function PrivacyPageClient() {
             <div>
               <h2 className="text-2xl font-bold text-forest mb-4">How we use your data</h2>
               <ul className="space-y-2 text-bark-light list-disc list-inside mb-4">
-                <li>To provide the DocMD service &mdash; converting your documents</li>
+                <li>To provide the MDDoc service &mdash; converting your documents</li>
                 <li>To send you important account and service updates</li>
                 <li>To improve the product based on aggregate usage patterns</li>
                 <li>To respond to support requests</li>
@@ -107,7 +107,7 @@ export function PrivacyPageClient() {
 
             <div>
               <h2 className="text-2xl font-bold text-forest mb-4">Third-party services</h2>
-              <p className="text-bark-light leading-relaxed mb-4">We use these services to run DocMD:</p>
+              <p className="text-bark-light leading-relaxed mb-4">We use these services to run MDDoc:</p>
               <ul className="space-y-2 text-bark-light list-disc list-inside mb-4">
                 <li><strong className="text-foreground">Supabase</strong> &mdash; Authentication and database</li>
                 <li><strong className="text-foreground">Stripe</strong> &mdash; Payment processing</li>
@@ -164,7 +164,7 @@ export function PrivacyPageClient() {
               <h2 className="text-2xl font-bold text-forest mb-4">Changes to this policy</h2>
               <p className="text-bark-light leading-relaxed">
                 We&apos;ll post changes here and, for significant changes, email
-                you. Your continued use of DocMD after changes constitutes
+                you. Your continued use of MDDoc after changes constitutes
                 acceptance.
               </p>
             </div>

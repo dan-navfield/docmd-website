@@ -7,12 +7,12 @@ export const convertFaqs = [
   {
     question: "What markdown features are supported?",
     answer:
-      "DocMD handles headings, bold, italic, links, images, bullet and numbered lists, tables, code blocks with syntax highlighting, blockquotes, and horizontal rules. Basically everything you'd write in a README or project doc.",
+      "MDDoc handles headings, bold, italic, links, images, bullet and numbered lists, tables, code blocks with syntax highlighting, blockquotes, and horizontal rules. Basically everything you'd write in a README or project doc.",
   },
   {
     question: "Is there a file size or character limit?",
     answer:
-      "The free converter supports documents up to 10,000 characters per conversion — plenty for most single documents. Need to convert longer files or process batches? DocMD Pro removes all limits.",
+      "The free converter supports documents up to 10,000 characters per conversion — plenty for most single documents. Need to convert longer files or process batches? MDDoc Pro removes all limits.",
   },
   {
     question: "Is my data private and secure?",
@@ -32,7 +32,7 @@ export const convertFaqs = [
   {
     question: "Can I use custom templates or branding?",
     answer:
-      "The free converter uses DocMD's default professional template. DocMD Pro lets you upload custom templates with your fonts, colors, headers, footers, and logo — every conversion matches your brand.",
+      "The free converter uses MDDoc's default professional template. MDDoc Pro lets you upload custom templates with your fonts, colors, headers, footers, and logo — every conversion matches your brand.",
   },
   {
     question: "Do I need an account to convert files?",
@@ -45,13 +45,13 @@ export const convertFaqs = [
       "Markdown to Word conversion transforms plain-text markdown (.md) files into formatted Microsoft Word (.docx) documents. Markdown uses simple syntax like # for headings, ** for bold, and - for lists. A converter reads that syntax and produces a Word file with proper heading styles, bold text, bullet lists, tables, and code blocks — ready to share with anyone who uses Word or Google Docs.",
   },
   {
-    question: "How is DocMD different from Pandoc?",
+    question: "How is MDDoc different from Pandoc?",
     answer:
-      "Pandoc is a powerful command-line tool that requires installation, configuration, and template knowledge. DocMD is a web platform — paste your markdown, see a live preview, and download your .docx in one click. DocMD adds features Pandoc doesn't have: AI document classification, a visual style mapping editor, custom branded templates, SharePoint export, and a REST API. If you want a tool your whole team can use without touching a terminal, that's DocMD.",
+      "Pandoc is a powerful command-line tool that requires installation, configuration, and template knowledge. MDDoc is a web platform — paste your markdown, see a live preview, and download your .docx in one click. MDDoc adds features Pandoc doesn't have: AI document classification, a visual style mapping editor, custom branded templates, SharePoint export, and a REST API. If you want a tool your whole team can use without touching a terminal, that's MDDoc.",
   },
   {
     question: "Can AI-generated markdown be converted to Word?",
     answer:
-      "Yes. DocMD handles markdown from any source — ChatGPT, Claude, GitHub Copilot, or any other AI tool. Paste the AI output directly into the converter and get a clean, professionally formatted Word document. No cleanup or reformatting needed.",
+      "Yes. MDDoc handles markdown from any source — ChatGPT, Claude, GitHub Copilot, or any other AI tool. Paste the AI output directly into the converter and get a clean, professionally formatted Word document. No cleanup or reformatting needed.",
   },
 ] as const;

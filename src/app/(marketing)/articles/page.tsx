@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Guides, tips, and insights about markdown to Word conversion, document automation, and working with AI-generated content.",
   alternates: { canonical: "/articles" },
   openGraph: {
-    title: "Articles — Guides, Tips & Insights | DocMD",
+    title: "Articles — Guides, Tips & Insights | MDDoc",
     description:
       "Guides, tips, and insights about markdown to Word conversion, document automation, and working with AI-generated content.",
     url: "/articles",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Articles — Guides, Tips & Insights | DocMD",
+    title: "Articles — Guides, Tips & Insights | MDDoc",
     description:
       "Guides, tips, and insights about markdown to Word conversion and document automation.",
   },
@@ -28,7 +28,7 @@ function CollectionPageSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "DocMD Articles",
+    name: "MDDoc Articles",
     description:
       "Guides, tips, and insights about markdown to Word conversion.",
     url: "https://mddoc.app/articles",

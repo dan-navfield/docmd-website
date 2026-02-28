@@ -220,7 +220,7 @@ function HowItWorks() {
       icon: Layers,
       title: "Pick a template",
       description:
-        "Use ours or upload your org's .docx template. DocMD extracts every style and maps it automatically.",
+        "Use ours or upload your org's .docx template. MDDoc extracts every style and maps it automatically.",
     },
     {
       number: "3",
@@ -327,7 +327,7 @@ function FeatureConversion() {
               Nothing breaks.
             </h2>
             <p className="text-lg text-bark-light leading-relaxed mb-6">
-              Other converters choke on tables, mangle nested lists, and ignore your styles entirely. DocMD handles 30+ markdown elements and maps each one to the exact paragraph or character style in your template.
+              Other converters choke on tables, mangle nested lists, and ignore your styles entirely. MDDoc handles 30+ markdown elements and maps each one to the exact paragraph or character style in your template.
             </p>
             <p className="text-lg text-bark-light leading-relaxed mb-8">
               The output isn&apos;t &ldquo;close enough.&rdquo; It&apos;s the heading style from row 47 of the style gallery. The one Carol from compliance insists on.
@@ -456,7 +456,7 @@ function FeatureAI() {
               what you wrote.
             </h2>
             <p className="text-lg text-bark-light leading-relaxed mb-6">
-              Drop in a document. DocMD&apos;s AI reads it, classifies it — runbook,
+              Drop in a document. MDDoc&apos;s AI reads it, classifies it — runbook,
               ADR, API spec — and routes it to the right template automatically.
             </p>
             <ul className="space-y-3">
@@ -594,7 +594,7 @@ function FeatureAPI() {
             </h2>
             <p className="text-lg text-bark-light leading-relaxed mb-6">
               Full REST API. MCP server for Claude. Generate API keys, build
-              pipelines. DocMD fits into your workflow, not the other way around.
+              pipelines. MDDoc fits into your workflow, not the other way around.
             </p>
             <div className="flex gap-4">
               <Link

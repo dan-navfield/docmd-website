@@ -4,7 +4,7 @@ import { HomePageClient } from "./HomePageClient";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "DocMD — Markdown to Word, Powered by AI",
+  title: "MDDoc — Markdown to Word, Powered by AI",
   description:
     "Stop wrestling with Word templates. Paste markdown, pick a template, get a document that looks like your org made it. AI-powered classification and conversion.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "DocMD — Markdown to Word, Powered by AI",
+    title: "MDDoc — Markdown to Word, Powered by AI",
     description:
       "Stop wrestling with Word templates. Paste markdown, pick a template, get a document that looks like your org made it.",
     url: "/",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DocMD — Markdown to Word, Powered by AI",
+    title: "MDDoc — Markdown to Word, Powered by AI",
     description:
       "Stop wrestling with Word templates. Paste markdown, pick a template, get a document that looks like your org made it.",
   },
@@ -36,7 +36,7 @@ function WebSiteSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "DocMD",
+    name: "MDDoc",
     url: "https://mddoc.app",
     description:
       "AI-powered markdown to Word document conversion platform. Upload markdown, get professionally styled .docx files matching your org templates.",
@@ -59,7 +59,7 @@ function SoftwareApplicationSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "DocMD",
+    name: "MDDoc",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Any",
     description:

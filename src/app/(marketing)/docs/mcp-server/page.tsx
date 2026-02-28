@@ -7,9 +7,9 @@ import { CodeBlock } from "@/components/docs/CodeBlock";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "MCP Server — DocMD Documentation",
+  title: "MCP Server — MDDoc Documentation",
   description:
-    "Connect DocMD to Claude Desktop and Claude Code via the Model Context Protocol. Convert documents directly from your AI workflow.",
+    "Connect MDDoc to Claude Desktop and Claude Code via the Model Context Protocol. Convert documents directly from your AI workflow.",
   alternates: { canonical: "/docs/mcp-server" },
 };
 
@@ -19,7 +19,7 @@ export default function McpServerPage() {
     <BreadcrumbSchema title="MCP Server" href="/docs/mcp-server" />
     <DocsContentLayout
       title="MCP Server"
-      description="Connect DocMD to Claude as a tool. Convert from your AI workflow."
+      description="Connect MDDoc to Claude as a tool. Convert from your AI workflow."
     >
       {/* What is MCP */}
       <section>
@@ -28,12 +28,12 @@ export default function McpServerPage() {
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
           The Model Context Protocol (MCP) lets AI assistants like Claude use
-          external tools. DocMD provides an MCP server that gives Claude direct
+          external tools. MDDoc provides an MCP server that gives Claude direct
           access to your templates, documents, and conversions.
         </p>
         <p className="text-bark-light leading-relaxed mb-4">
-          Instead of switching between Claude and the DocMD dashboard, you just
-          ask Claude to convert your document. It calls DocMD behind the scenes.
+          Instead of switching between Claude and the MDDoc dashboard, you just
+          ask Claude to convert your document. It calls MDDoc behind the scenes.
         </p>
         <div className="bg-golden/10 border-l-4 border-golden rounded-r-lg p-4 mb-6">
           <p className="text-sm text-bark">
@@ -49,7 +49,7 @@ export default function McpServerPage() {
       <section className="mt-10">
         <h2 className="text-2xl font-bold text-foreground mb-4">Setup</h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          You need Python 3.10+ and an API key from your DocMD dashboard.
+          You need Python 3.10+ and an API key from your MDDoc dashboard.
         </p>
 
         <h3 className="text-lg font-semibold text-foreground mb-3 mt-6">
@@ -75,12 +75,12 @@ export default function McpServerPage() {
           title="claude_desktop_config.json"
           code={`{
   "mcpServers": {
-    "docmd": {
+    "mddoc": {
       "command": "python3",
       "args": ["/path/to/mcp_server.py"],
       "env": {
-        "DOCMD_API_URL": "https://api.mddoc.app",
-        "DOCMD_API_KEY": "docmd_YOUR_KEY"
+        "MDDOC_API_URL": "https://api.mddoc.app",
+        "MDDOC_API_KEY": "mddoc_YOUR_KEY"
       }
     }
   }
@@ -102,12 +102,12 @@ export default function McpServerPage() {
           title=".mcp.json"
           code={`{
   "mcpServers": {
-    "docmd": {
+    "mddoc": {
       "command": "python3",
       "args": ["./mcp_server.py"],
       "env": {
-        "DOCMD_API_URL": "https://api.mddoc.app",
-        "DOCMD_API_KEY": "docmd_YOUR_KEY"
+        "MDDOC_API_URL": "https://api.mddoc.app",
+        "MDDOC_API_KEY": "mddoc_YOUR_KEY"
       }
     }
   }
@@ -115,7 +115,7 @@ export default function McpServerPage() {
         />
 
         <p className="text-bark-light leading-relaxed mb-4">
-          Restart Claude after adding the config. You should see DocMD tools
+          Restart Claude after adding the config. You should see MDDoc tools
           listed when you start a conversation.
         </p>
       </section>
@@ -143,7 +143,7 @@ export default function McpServerPage() {
             <tbody className="text-bark-light">
               <tr className="border-b border-sand">
                 <td className="py-3 px-4 font-mono text-xs">
-                  docmd_list_templates
+                  mddoc_list_templates
                 </td>
                 <td className="py-3 px-4">
                   List all available Word templates
@@ -151,7 +151,7 @@ export default function McpServerPage() {
               </tr>
               <tr className="border-b border-sand">
                 <td className="py-3 px-4 font-mono text-xs">
-                  docmd_list_mappings
+                  mddoc_list_mappings
                 </td>
                 <td className="py-3 px-4">
                   List style mappings, optionally filtered by template
@@ -159,13 +159,13 @@ export default function McpServerPage() {
               </tr>
               <tr className="border-b border-sand">
                 <td className="py-3 px-4 font-mono text-xs">
-                  docmd_list_documents
+                  mddoc_list_documents
                 </td>
                 <td className="py-3 px-4">List all stored documents</td>
               </tr>
               <tr className="border-b border-sand">
                 <td className="py-3 px-4 font-mono text-xs">
-                  docmd_submit_document
+                  mddoc_submit_document
                 </td>
                 <td className="py-3 px-4">
                   Submit markdown with a title and optional project
@@ -173,13 +173,13 @@ export default function McpServerPage() {
               </tr>
               <tr className="border-b border-sand">
                 <td className="py-3 px-4 font-mono text-xs">
-                  docmd_get_document
+                  mddoc_get_document
                 </td>
                 <td className="py-3 px-4">Get document details by ID</td>
               </tr>
               <tr className="border-b border-sand">
                 <td className="py-3 px-4 font-mono text-xs">
-                  docmd_convert
+                  mddoc_convert
                 </td>
                 <td className="py-3 px-4">
                   Convert a document with a template and mapping
@@ -187,7 +187,7 @@ export default function McpServerPage() {
               </tr>
               <tr>
                 <td className="py-3 px-4 font-mono text-xs">
-                  docmd_classify
+                  mddoc_classify
                 </td>
                 <td className="py-3 px-4">
                   AI-powered document type classification
@@ -223,19 +223,19 @@ export default function McpServerPage() {
             <p className="text-sm text-bark">
               Claude calls{" "}
               <span className="font-mono bg-sand px-1 py-0.5 rounded text-xs">
-                docmd_list_templates
+                mddoc_list_templates
               </span>{" "}
               to find the corporate template, then{" "}
               <span className="font-mono bg-sand px-1 py-0.5 rounded text-xs">
-                docmd_list_mappings
+                mddoc_list_mappings
               </span>{" "}
               to get the matching mapping, then{" "}
               <span className="font-mono bg-sand px-1 py-0.5 rounded text-xs">
-                docmd_submit_document
+                mddoc_submit_document
               </span>{" "}
               with your markdown, and finally{" "}
               <span className="font-mono bg-sand px-1 py-0.5 rounded text-xs">
-                docmd_convert
+                mddoc_convert
               </span>
               .
             </p>
@@ -260,7 +260,7 @@ export default function McpServerPage() {
         <p className="text-bark-light leading-relaxed mb-4">
           The{" "}
           <span className="font-mono text-sm bg-sand px-1.5 py-0.5 rounded">
-            docmd_classify
+            mddoc_classify
           </span>{" "}
           tool uses Claude or GPT-4 to analyze your markdown and recommend a
           document type. It recognizes 14 types:

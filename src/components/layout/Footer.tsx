@@ -94,7 +94,7 @@ export function Footer() {
           {/* Bottom */}
           <div className="border-t border-white/10 pt-10 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-white/30">
-              &copy; {new Date().getFullYear()} DocMD. All rights reserved.
+              &copy; {new Date().getFullYear()} MDDoc. All rights reserved.
             </p>
             <p className="text-sm text-white/30">
               Made for people who write in markdown and ship in Word.

@@ -7,20 +7,20 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Use Cases — Markdown to Word for Every Role",
   description:
-    "See how developers, technical writers, and AI teams use DocMD to convert markdown to professional Word documents. Solutions tailored to your workflow.",
+    "See how developers, technical writers, and AI teams use MDDoc to convert markdown to professional Word documents. Solutions tailored to your workflow.",
   alternates: { canonical: "/use-cases" },
   openGraph: {
-    title: "Use Cases — Markdown to Word for Every Role | DocMD",
+    title: "Use Cases — Markdown to Word for Every Role | MDDoc",
     description:
-      "See how developers, technical writers, and AI teams use DocMD to convert markdown to Word.",
+      "See how developers, technical writers, and AI teams use MDDoc to convert markdown to Word.",
     url: "/use-cases",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Use Cases — Markdown to Word for Every Role | DocMD",
+    title: "Use Cases — Markdown to Word for Every Role | MDDoc",
     description:
-      "See how developers, technical writers, and AI teams use DocMD to convert markdown to Word.",
+      "See how developers, technical writers, and AI teams use MDDoc to convert markdown to Word.",
   },
 };
 
@@ -28,9 +28,9 @@ function CollectionPageSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "DocMD Use Cases",
+    name: "MDDoc Use Cases",
     description:
-      "How different roles use DocMD for markdown to Word conversion.",
+      "How different roles use MDDoc for markdown to Word conversion.",
     url: "https://mddoc.app/use-cases",
     mainEntity: useCases.map((u) => ({
       "@type": "Article",

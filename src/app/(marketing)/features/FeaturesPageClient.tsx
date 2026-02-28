@@ -293,7 +293,7 @@ function FeaturesHero() {
             <GradientText variant="golden">beautiful documents</GradientText>
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-            From conversion to classification to export — DocMD handles the
+            From conversion to classification to export — MDDoc handles the
             entire document pipeline so you can focus on writing.
           </p>
         </motion.div>

@@ -39,7 +39,7 @@ export function UseCasesIndexClient() {
               Built for how you work
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-              See how DocMD fits into the workflows of developers, technical
+              See how MDDoc fits into the workflows of developers, technical
               writers, and AI teams.
             </p>
           </motion.div>

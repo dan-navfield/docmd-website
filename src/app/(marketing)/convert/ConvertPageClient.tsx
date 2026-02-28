@@ -48,7 +48,7 @@ import {
 
 const MAX_CHARS = 10000;
 const MAX_FREE_CONVERSIONS = 3;
-const STORAGE_KEY = "docmd-conversion-count";
+const STORAGE_KEY = "mddoc-conversion-count";
 
 // ─── Simple Markdown-to-HTML renderer ───────────────────────────────────────
 
@@ -352,7 +352,7 @@ function ConverterTool() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "docmd-output.docx";
+      a.download = "mddoc-output.docx";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

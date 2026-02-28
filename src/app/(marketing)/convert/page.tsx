@@ -5,7 +5,7 @@ import { convertFaqs } from "@/data/convert-faq";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Free Markdown to Word Converter — Convert MD to DOCX Online | DocMD",
+  title: "Free Markdown to Word Converter — Convert MD to DOCX Online | MDDoc",
   description:
     "Convert markdown to Word documents instantly. Free online tool with live preview. No signup required.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: "/convert",
   },
   openGraph: {
-    title: "Free Markdown to Word Converter | DocMD",
+    title: "Free Markdown to Word Converter | MDDoc",
     description:
       "Convert markdown to Word documents instantly. Free online tool with live preview.",
     url: "/convert",
@@ -31,7 +31,7 @@ function WebApplicationSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "DocMD Markdown to Word Converter",
+    name: "MDDoc Markdown to Word Converter",
     description:
       "Convert markdown to professionally formatted Word documents instantly. Free online tool with live preview.",
     applicationCategory: "Utility",
@@ -79,13 +79,13 @@ function HowToSchema() {
     "@type": "HowTo",
     name: "How to Convert Markdown to a Word Document",
     description:
-      "Convert markdown to a professionally formatted .docx file in three steps using DocMD's free online converter.",
+      "Convert markdown to a professionally formatted .docx file in three steps using MDDoc's free online converter.",
     step: [
       {
         "@type": "HowToStep",
         position: 1,
         name: "Paste your markdown",
-        text: "Open the DocMD converter and paste your markdown into the editor. Supports GitHub Flavored Markdown, Obsidian, and plain .md files.",
+        text: "Open the MDDoc converter and paste your markdown into the editor. Supports GitHub Flavored Markdown, Obsidian, and plain .md files.",
         url: "https://mddoc.app/convert",
       },
       {
@@ -106,7 +106,7 @@ function HowToSchema() {
     totalTime: "PT30S",
     tool: {
       "@type": "HowToTool",
-      name: "DocMD Markdown to Word Converter",
+      name: "MDDoc Markdown to Word Converter",
     },
   };
 
@@ -124,15 +124,15 @@ function ArticleSchema() {
     "@type": "Article",
     headline: "What Is Markdown to Word Conversion?",
     description:
-      "Learn what markdown to Word conversion is, why you need it, and how DocMD converts .md files to professionally formatted .docx documents in seconds.",
+      "Learn what markdown to Word conversion is, why you need it, and how MDDoc converts .md files to professionally formatted .docx documents in seconds.",
     author: {
       "@type": "Organization",
-      name: "DocMD",
+      name: "MDDoc",
       url: "https://mddoc.app",
     },
     publisher: {
       "@type": "Organization",
-      name: "DocMD",
+      name: "MDDoc",
       url: "https://mddoc.app",
     },
     mainEntityOfPage: {

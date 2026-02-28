@@ -36,7 +36,7 @@ function DocsHero() {
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
             Build with{" "}
-            <GradientText variant="golden">DocMD</GradientText>
+            <GradientText variant="golden">MDDoc</GradientText>
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
             REST API, MCP server, SharePoint export. Everything you need to
@@ -85,7 +85,7 @@ const guides = [
     icon: Code2,
     title: "MCP Server",
     description:
-      "Connect DocMD to Claude as a tool. Convert documents directly from your AI workflow.",
+      "Connect MDDoc to Claude as a tool. Convert documents directly from your AI workflow.",
     color: "bg-teal/10 text-teal",
     href: "/docs/mcp-server",
   },
@@ -209,7 +209,7 @@ function ApiPreview() {
                 https://api.mddoc.app/api/v1/convert \{"\n"}
                 {"  "}-H{" "}
                 <span className="text-teal-light">
-                  &quot;Authorization: Bearer docmd_...&quot;
+                  &quot;Authorization: Bearer mddoc_...&quot;
                 </span>{" "}
                 \{"\n"}
                 {"  "}-H{" "}

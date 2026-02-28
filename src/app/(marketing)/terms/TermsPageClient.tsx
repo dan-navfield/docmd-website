@@ -38,16 +38,16 @@ export function TermsPageClient() {
             <div>
               <h2 className="text-2xl font-bold text-forest mb-4">The short version</h2>
               <p className="text-bark-light leading-relaxed">
-                Use DocMD for its intended purpose. Don&apos;t abuse it. Your
+                Use MDDoc for its intended purpose. Don&apos;t abuse it. Your
                 content is yours. Our service is ours. Be reasonable and
                 we&apos;ll be reasonable.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-forest mb-4">What DocMD does</h2>
+              <h2 className="text-2xl font-bold text-forest mb-4">What MDDoc does</h2>
               <p className="text-bark-light leading-relaxed">
-                DocMD is a web-based platform that converts markdown text into
+                MDDoc is a web-based platform that converts markdown text into
                 Microsoft Word (.docx) documents using your templates. We also
                 offer AI-powered document classification, template management, and
                 integration features. These terms govern your use of mddoc.app and
@@ -65,7 +65,7 @@ export function TermsPageClient() {
               </p>
               <p className="text-bark-light leading-relaxed">
                 You must be at least 16 years old to create an account. If
-                you&apos;re using DocMD on behalf of a company, you confirm you
+                you&apos;re using MDDoc on behalf of a company, you confirm you
                 have authority to bind that company to these terms.
               </p>
             </div>
@@ -98,7 +98,7 @@ export function TermsPageClient() {
               <h2 className="text-2xl font-bold text-forest mb-4">Your content</h2>
               <p className="text-bark-light leading-relaxed">
                 You own your markdown, templates, and converted documents. By using
-                DocMD, you grant us the limited right to process your content
+                MDDoc, you grant us the limited right to process your content
                 solely to provide the service. We don&apos;t claim any ownership
                 over your content and we don&apos;t use it to train AI models.
               </p>
@@ -106,7 +106,7 @@ export function TermsPageClient() {
 
             <div>
               <h2 className="text-2xl font-bold text-forest mb-4">Acceptable use</h2>
-              <p className="text-bark-light leading-relaxed mb-4">Don&apos;t use DocMD to:</p>
+              <p className="text-bark-light leading-relaxed mb-4">Don&apos;t use MDDoc to:</p>
               <ul className="space-y-2 text-bark-light list-disc list-inside mb-4">
                 <li>Convert content that violates any law</li>
                 <li>Attempt to reverse-engineer or exploit the service</li>
@@ -123,7 +123,7 @@ export function TermsPageClient() {
             <div>
               <h2 className="text-2xl font-bold text-forest mb-4">API usage</h2>
               <p className="text-bark-light leading-relaxed">
-                The DocMD API is subject to rate limits documented in our API
+                The MDDoc API is subject to rate limits documented in our API
                 reference. API keys are tied to your account and must not be
                 shared publicly. We may revoke keys that are abused.
               </p>
@@ -152,7 +152,7 @@ export function TermsPageClient() {
             <div>
               <h2 className="text-2xl font-bold text-forest mb-4">Limitation of liability</h2>
               <p className="text-bark-light leading-relaxed">
-                DocMD is provided &ldquo;as is.&rdquo; We do our best to keep
+                MDDoc is provided &ldquo;as is.&rdquo; We do our best to keep
                 things running smoothly, but we&apos;re not liable for indirect,
                 incidental, or consequential damages arising from your use of the
                 service. Our total liability is limited to the amount you&apos;ve

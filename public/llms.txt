@@ -1,8 +1,8 @@
-# DocMD
+# MDDoc
 
 > Markdown in. Word out. Perfectly styled.
 
-DocMD is an AI-powered platform that converts markdown to professionally formatted Microsoft Word (.docx) documents. It supports custom Word templates, AI document classification, and enterprise integrations like SharePoint export.
+MDDoc is an AI-powered platform that converts markdown to professionally formatted Microsoft Word (.docx) documents. It supports custom Word templates, AI document classification, and enterprise integrations like SharePoint export.
 
 ## Key Features
 
@@ -37,14 +37,14 @@ DocMD is an AI-powered platform that converts markdown to professionally formatt
 
 ## Comparisons
 
-- DocMD vs Pandoc: https://mddoc.app/compare/docmd-vs-pandoc
-- DocMD vs Manual Formatting: https://mddoc.app/compare/docmd-vs-manual-formatting
+- MDDoc vs Pandoc: https://mddoc.app/compare/mddoc-vs-pandoc
+- MDDoc vs Manual Formatting: https://mddoc.app/compare/mddoc-vs-manual-formatting
 
 ## Use Cases
 
-- DocMD for Developers: https://mddoc.app/use-cases/developers
-- DocMD for Technical Writers: https://mddoc.app/use-cases/technical-writers
-- DocMD for AI Teams: https://mddoc.app/use-cases/ai-teams
+- MDDoc for Developers: https://mddoc.app/use-cases/developers
+- MDDoc for Technical Writers: https://mddoc.app/use-cases/technical-writers
+- MDDoc for AI Teams: https://mddoc.app/use-cases/ai-teams
 
 ## Pricing
 
@@ -61,11 +61,11 @@ A: Paste markdown into the editor at mddoc.app/convert, preview the output, and 
 Q: What markdown features are supported?
 A: Headings, bold, italic, links, images, bullet and numbered lists, tables, code blocks with syntax highlighting, blockquotes, and horizontal rules.
 
-Q: Is DocMD different from Pandoc?
-A: Yes. Pandoc is a command-line tool that requires installation and configuration. DocMD is a web platform with a visual editor, live preview, custom template support, AI classification, and a REST API. DocMD produces consistently styled output that matches your organization's branding.
+Q: Is MDDoc different from Pandoc?
+A: Yes. Pandoc is a command-line tool that requires installation and configuration. MDDoc is a web platform with a visual editor, live preview, custom template support, AI classification, and a REST API. MDDoc produces consistently styled output that matches your organization's branding.
 
 Q: Can AI-generated markdown be converted to Word?
-A: Yes. DocMD handles markdown from any source — ChatGPT, Claude, Copilot, or any other AI tool. Paste the output directly into the converter.
+A: Yes. MDDoc handles markdown from any source — ChatGPT, Claude, Copilot, or any other AI tool. Paste the output directly into the converter.
 
 ## Contact
 

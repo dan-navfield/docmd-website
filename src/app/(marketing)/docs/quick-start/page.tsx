@@ -7,9 +7,9 @@ import { CodeBlock } from "@/components/docs/CodeBlock";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Quick Start — DocMD Documentation",
+  title: "Quick Start — MDDoc Documentation",
   description:
-    "Get your first markdown-to-Word conversion running in under five minutes with the DocMD API.",
+    "Get your first markdown-to-Word conversion running in under five minutes with the MDDoc API.",
   alternates: { canonical: "/docs/quick-start" },
 };
 
@@ -27,11 +27,11 @@ export default function QuickStartPage() {
           Prerequisites
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          You need two things to use the DocMD API:
+          You need two things to use the MDDoc API:
         </p>
         <ol className="list-decimal list-inside space-y-2 mb-6 text-bark-light">
           <li>
-            A DocMD account on the{" "}
+            A MDDoc account on the{" "}
             <span className="font-medium text-foreground">Team</span> or{" "}
             <span className="font-medium text-foreground">Enterprise</span>{" "}
             plan (API access is not available on Solo)
@@ -57,7 +57,7 @@ export default function QuickStartPage() {
           1. Get your API key
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          Sign in to the DocMD dashboard. Go to{" "}
+          Sign in to the MDDoc dashboard. Go to{" "}
           <span className="font-mono text-sm bg-sand px-1.5 py-0.5 rounded">
             Settings → API Keys
           </span>{" "}
@@ -68,14 +68,14 @@ export default function QuickStartPage() {
           now. It looks like this:
         </p>
         <CodeBlock
-          code="docmd_clmvMFXmPUJ6xK9Tq..."
+          code="mddoc_clmvMFXmPUJ6xK9Tq..."
           language="text"
           title="Your API key"
         />
         <p className="text-bark-light leading-relaxed mb-4">
           Keys always start with{" "}
           <span className="font-mono text-sm bg-sand px-1.5 py-0.5 rounded">
-            docmd_
+            mddoc_
           </span>
           . Keep it secret. If it leaks, revoke it from the same settings page
           and generate a new one.
@@ -96,7 +96,7 @@ export default function QuickStartPage() {
           language="bash"
           title="List templates"
           code={`curl https://api.mddoc.app/api/v1/templates \\
-  -H "Authorization: Bearer docmd_YOUR_KEY"`}
+  -H "Authorization: Bearer mddoc_YOUR_KEY"`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
           Pick a template ID from the response, then list its mappings:
@@ -105,7 +105,7 @@ export default function QuickStartPage() {
           language="bash"
           title="List mappings for a template"
           code={`curl "https://api.mddoc.app/api/v1/mappings?template_id=TEMPLATE_ID" \\
-  -H "Authorization: Bearer docmd_YOUR_KEY"`}
+  -H "Authorization: Bearer mddoc_YOUR_KEY"`}
         />
       </section>
 
@@ -122,7 +122,7 @@ export default function QuickStartPage() {
           language="bash"
           title="Convert markdown"
           code={`curl -X POST https://api.mddoc.app/api/v1/convert \\
-  -H "Authorization: Bearer docmd_YOUR_KEY" \\
+  -H "Authorization: Bearer mddoc_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
     "markdown": "# Project Brief\\n\\nThis is the overview.\\n\\n## Goals\\n\\n- Ship faster\\n- Reduce manual formatting",
@@ -167,7 +167,7 @@ export default function QuickStartPage() {
           language="bash"
           title="Download"
           code={`curl https://api.mddoc.app/api/v1/conversions/CONVERSION_ID/download \\
-  -H "Authorization: Bearer docmd_YOUR_KEY" \\
+  -H "Authorization: Bearer mddoc_YOUR_KEY" \\
   -o project-brief.docx`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
@@ -203,7 +203,7 @@ export default function QuickStartPage() {
           code={`const response = await fetch("https://api.mddoc.app/api/v1/convert", {
   method: "POST",
   headers: {
-    "Authorization": "Bearer docmd_YOUR_KEY",
+    "Authorization": "Bearer mddoc_YOUR_KEY",
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
@@ -227,7 +227,7 @@ fs.writeFileSync("output.docx", Buffer.from(buffer));`}
 
 response = requests.post(
     "https://api.mddoc.app/api/v1/convert",
-    headers={"Authorization": "Bearer docmd_YOUR_KEY"},
+    headers={"Authorization": "Bearer mddoc_YOUR_KEY"},
     json={
         "markdown": "# Hello World\\n\\nConverted via the API.",
         "template_id": "your-template-uuid",

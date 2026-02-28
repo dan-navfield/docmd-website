@@ -30,7 +30,7 @@ export default function AuthLayout({
 
       {/* Footer text */}
       <p className="relative z-10 mt-8 text-xs text-white/30 text-center">
-        &copy; {new Date().getFullYear()} DocMD. All rights reserved.
+        &copy; {new Date().getFullYear()} MDDoc. All rights reserved.
       </p>
     </div>
   );

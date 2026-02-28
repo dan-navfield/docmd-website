@@ -7,9 +7,9 @@ import { CodeBlock } from "@/components/docs/CodeBlock";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Authentication — DocMD Documentation",
+  title: "Authentication — MDDoc Documentation",
   description:
-    "How to authenticate with the DocMD API using API keys, bearer tokens, and understand tier-based access controls.",
+    "How to authenticate with the MDDoc API using API keys, bearer tokens, and understand tier-based access controls.",
   alternates: { canonical: "/docs/authentication" },
 };
 
@@ -25,7 +25,7 @@ export default function AuthenticationPage() {
       <section>
         <h2 className="text-2xl font-bold text-foreground mb-4">Overview</h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          DocMD uses API keys for programmatic access. Every request to the
+          MDDoc uses API keys for programmatic access. Every request to the
           public API must include a valid key in the{" "}
           <span className="font-mono text-sm bg-sand px-1.5 py-0.5 rounded">
             Authorization
@@ -43,7 +43,7 @@ export default function AuthenticationPage() {
           Generating API keys
         </h2>
         <p className="text-bark-light leading-relaxed mb-4">
-          From the DocMD dashboard:
+          From the MDDoc dashboard:
         </p>
         <ol className="list-decimal list-inside space-y-2 mb-6 text-bark-light">
           <li>
@@ -71,15 +71,15 @@ export default function AuthenticationPage() {
 {
   "id": "key_abc123",
   "name": "CI Pipeline",
-  "key": "docmd_clmvMFXmPUJ6xK9TqR8nW...",
-  "key_prefix": "docmd_clmv",
+  "key": "mddoc_clmvMFXmPUJ6xK9TqR8nW...",
+  "key_prefix": "mddoc_clmv",
   "created_at": "2026-02-25T10:00:00Z"
 }`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
           Keys always start with{" "}
           <span className="font-mono text-sm bg-sand px-1.5 py-0.5 rounded">
-            docmd_
+            mddoc_
           </span>
           . The full key is only returned at creation time. After that, only the
           prefix is visible in your dashboard.
@@ -101,7 +101,7 @@ export default function AuthenticationPage() {
         <CodeBlock
           language="bash"
           code={`curl https://api.mddoc.app/api/v1/templates \\
-  -H "Authorization: Bearer docmd_YOUR_KEY"`}
+  -H "Authorization: Bearer mddoc_YOUR_KEY"`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
           That&apos;s it. No additional headers, no session management.
@@ -190,7 +190,7 @@ export default function AuthenticationPage() {
         <div className="bg-golden/10 border-l-4 border-golden rounded-r-lg p-4 mb-6">
           <p className="text-sm text-bark">
             <span className="font-semibold">MCP is available on all plans.</span>{" "}
-            Even Solo users can connect DocMD to Claude Desktop or Claude Code
+            Even Solo users can connect MDDoc to Claude Desktop or Claude Code
             via the MCP server. The public REST API requires Team or higher.
           </p>
         </div>
@@ -256,7 +256,7 @@ export default function AuthenticationPage() {
                 <td className="py-3 px-4">invalid_api_key</td>
                 <td className="py-3 px-4 font-sans text-sm">
                   Key is invalid, revoked, or not a{" "}
-                  <span className="font-mono">docmd_</span> key
+                  <span className="font-mono">mddoc_</span> key
                 </td>
               </tr>
               <tr>
