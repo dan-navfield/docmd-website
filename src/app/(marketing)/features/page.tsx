@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { FeaturesPageClient } from "./FeaturesPageClient";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Features — AI Classification, Custom Templates & More",
   description:

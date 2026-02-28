@@ -577,7 +577,7 @@ function FeatureAPI() {
                 <span className="text-[10px] text-white/20 ml-1">Terminal</span>
               </div>
               <pre className="text-white/50 whitespace-pre-wrap leading-loose text-xs md:text-sm">
-<span className="text-warm-gray">$</span> <span className="text-golden">curl</span> -X POST api.docmd.io/convert \{"\n"}  -H <span className="text-teal-light">&quot;Authorization: Bearer dk_...&quot;</span> \{"\n"}  -d <span className="text-orange">&apos;{`{"markdown":"# Report..."}`}&apos;</span>{"\n"}
+<span className="text-warm-gray">$</span> <span className="text-golden">curl</span> -X POST api.mddoc.app/convert \{"\n"}  -H <span className="text-teal-light">&quot;Authorization: Bearer dk_...&quot;</span> \{"\n"}  -d <span className="text-orange">&apos;{`{"markdown":"# Report..."}`}&apos;</span>{"\n"}
 <span className="text-teal-light">{`{`}</span>{"\n"}  <span className="text-white/30">&quot;status&quot;:</span> <span className="text-teal-light">&quot;completed&quot;</span>,{"\n"}  <span className="text-white/30">&quot;download&quot;:</span> <span className="text-orange">&quot;https://...&quot;</span>,{"\n"}  <span className="text-white/30">&quot;time_ms&quot;:</span> <span className="text-golden">1247</span>{"\n"}<span className="text-teal-light">{`}`}</span>
               </pre>
             </div>

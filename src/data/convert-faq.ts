@@ -39,4 +39,19 @@ export const convertFaqs = [
     answer:
       "No. You get 3 free conversions with no signup. After that, create a free account for more, or upgrade to Pro for unlimited conversions, batch processing, and custom templates.",
   },
+  {
+    question: "What is markdown to Word conversion?",
+    answer:
+      "Markdown to Word conversion transforms plain-text markdown (.md) files into formatted Microsoft Word (.docx) documents. Markdown uses simple syntax like # for headings, ** for bold, and - for lists. A converter reads that syntax and produces a Word file with proper heading styles, bold text, bullet lists, tables, and code blocks — ready to share with anyone who uses Word or Google Docs.",
+  },
+  {
+    question: "How is DocMD different from Pandoc?",
+    answer:
+      "Pandoc is a powerful command-line tool that requires installation, configuration, and template knowledge. DocMD is a web platform — paste your markdown, see a live preview, and download your .docx in one click. DocMD adds features Pandoc doesn't have: AI document classification, a visual style mapping editor, custom branded templates, SharePoint export, and a REST API. If you want a tool your whole team can use without touching a terminal, that's DocMD.",
+  },
+  {
+    question: "Can AI-generated markdown be converted to Word?",
+    answer:
+      "Yes. DocMD handles markdown from any source — ChatGPT, Claude, GitHub Copilot, or any other AI tool. Paste the AI output directly into the converter and get a clean, professionally formatted Word document. No cleanup or reformatting needed.",
+  },
 ] as const;

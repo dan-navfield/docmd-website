@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { StatusPageClient } from "./StatusPageClient";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "System Status",
   description:

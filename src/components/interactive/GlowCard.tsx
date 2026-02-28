@@ -34,10 +34,9 @@ export function GlowCard({
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      whileHover={{ y: -4 }}
       transition={{ duration: 0.2 }}
       className={cn(
-        "relative rounded-2xl border border-border bg-white overflow-hidden",
+        "relative rounded-2xl border border-border bg-white overflow-hidden transition-transform duration-200 hover:-translate-y-1",
         className
       )}
     >

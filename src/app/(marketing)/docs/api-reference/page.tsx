@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DocsContentLayout } from "@/components/docs/DocsContentLayout";
+import { BreadcrumbSchema } from "@/components/docs/BreadcrumbSchema";
 import { CodeBlock } from "@/components/docs/CodeBlock";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "API Reference — DocMD Documentation",
@@ -26,6 +29,8 @@ function MethodBadge({ method }: { method: "GET" | "POST" }) {
 
 export default function ApiReferencePage() {
   return (
+    <>
+    <BreadcrumbSchema title="API Reference" href="/docs/api-reference" />
     <DocsContentLayout
       title="Conversion API"
       description="Every endpoint, every parameter, every error code."
@@ -33,7 +38,7 @@ export default function ApiReferencePage() {
       {/* Base URL */}
       <section>
         <h2 className="text-2xl font-bold text-foreground mb-4">Base URL</h2>
-        <CodeBlock code="https://api.docmd.io" language="text" />
+        <CodeBlock code="https://api.mddoc.app" language="text" />
         <p className="text-bark-light leading-relaxed mb-4">
           All endpoints are prefixed with{" "}
           <span className="font-mono text-sm bg-sand px-1.5 py-0.5 rounded">
@@ -270,7 +275,7 @@ export default function ApiReferencePage() {
         <CodeBlock
           language="bash"
           title="Convert with binary response"
-          code={`curl -X POST https://api.docmd.io/api/v1/convert \\
+          code={`curl -X POST https://api.mddoc.app/api/v1/convert \\
   -H "Authorization: Bearer docmd_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -354,7 +359,7 @@ export default function ApiReferencePage() {
         <CodeBlock
           language="bash"
           title="Download a conversion"
-          code={`curl https://api.docmd.io/api/v1/conversions/CONVERSION_ID/download \\
+          code={`curl https://api.mddoc.app/api/v1/conversions/CONVERSION_ID/download \\
   -H "Authorization: Bearer docmd_YOUR_KEY" \\
   -o output.docx`}
         />
@@ -623,5 +628,6 @@ export default function ApiReferencePage() {
         </div>
       </section>
     </DocsContentLayout>
+    </>
   );
 }

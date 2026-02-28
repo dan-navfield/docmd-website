@@ -173,7 +173,7 @@ export function PrivacyPageClient() {
               <h2 className="text-2xl font-bold text-forest mb-4">Contact</h2>
               <p className="text-bark-light leading-relaxed">
                 Questions about privacy? Email us at{" "}
-                <a href="mailto:hello@docmd.io" className="text-teal hover:text-forest font-medium underline underline-offset-2">hello@docmd.io</a>. We respond
+                <a href="mailto:hello@mddoc.app" className="text-teal hover:text-forest font-medium underline underline-offset-2">hello@mddoc.app</a>. We respond
                 fast.
               </p>
             </div>

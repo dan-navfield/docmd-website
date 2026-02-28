@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { ChangelogPageClient } from "./ChangelogPageClient";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Changelog — What's New in DocMD",
   description:

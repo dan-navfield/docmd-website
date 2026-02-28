@@ -1,14 +1,93 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import { Menu } from "lucide-react";
+import { motion, useMotionValueEvent, useScroll, AnimatePresence } from "framer-motion";
+import { Menu, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { navLinks } from "@/data/navigation";
+import { navLinks, isDropdown, type NavItem, type NavDropdown } from "@/data/navigation";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { MobileNav } from "./MobileNav";
+
+function DesktopDropdown({
+  item,
+  scrolled,
+}: {
+  item: NavDropdown;
+  scrolled: boolean;
+}) {
+  const [open, setOpen] = useState(false);
+  const timeout = useRef<ReturnType<typeof setTimeout>>(null);
+  const ref = useRef<HTMLDivElement>(null);
+
+  const handleEnter = () => {
+    if (timeout.current) clearTimeout(timeout.current);
+    setOpen(true);
+  };
+
+  const handleLeave = () => {
+    timeout.current = setTimeout(() => setOpen(false), 150);
+  };
+
+  return (
+    <div
+      ref={ref}
+      className="relative"
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
+      <button
+        className={cn(
+          "flex items-center gap-1 text-sm font-medium transition-colors duration-200",
+          scrolled
+            ? "text-bark-light hover:text-forest"
+            : "text-white/80 hover:text-white"
+        )}
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+      >
+        {item.label}
+        <ChevronDown
+          className={cn(
+            "w-3.5 h-3.5 transition-transform duration-200",
+            open && "rotate-180"
+          )}
+        />
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.15 }}
+            className="absolute top-full left-1/2 -translate-x-1/2 pt-3"
+          >
+            <div className="w-56 bg-white rounded-xl border border-sand shadow-lg overflow-hidden">
+              {item.children.map((child) => (
+                <Link
+                  key={child.href}
+                  href={child.href}
+                  onClick={() => setOpen(false)}
+                  className="block px-4 py-3 hover:bg-cream transition-colors"
+                >
+                  <span className="block text-sm font-medium text-forest">
+                    {child.label}
+                  </span>
+                  <span className="block text-xs text-warm-gray mt-0.5">
+                    {child.description}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,7 +110,7 @@ export function Header() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
             ? "bg-white/90 backdrop-blur-xl border-b border-sand shadow-sm"
-            : "bg-transparent"
+            : "bg-transparent border-b border-transparent"
         )}
       >
         <Container>
@@ -39,20 +118,28 @@ export function Header() {
             <Logo variant={scrolled ? "dark" : "light"} />
 
             <nav className="hidden md:flex items-center gap-10">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    "text-sm font-medium transition-colors duration-200",
-                    scrolled
-                      ? "text-bark-light hover:text-forest"
-                      : "text-white/80 hover:text-white"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((item: NavItem) =>
+                isDropdown(item) ? (
+                  <DesktopDropdown
+                    key={item.label}
+                    item={item}
+                    scrolled={scrolled}
+                  />
+                ) : (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={cn(
+                      "text-sm font-medium transition-colors duration-200",
+                      scrolled
+                        ? "text-bark-light hover:text-forest"
+                        : "text-white/80 hover:text-white"
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
             </nav>
 
             <div className="hidden md:flex items-center gap-4">

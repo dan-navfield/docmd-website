@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DocsPageClient } from "./DocsPageClient";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Documentation — API Reference & Guides",
   description:

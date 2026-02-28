@@ -50,7 +50,7 @@ export function TermsPageClient() {
                 DocMD is a web-based platform that converts markdown text into
                 Microsoft Word (.docx) documents using your templates. We also
                 offer AI-powered document classification, template management, and
-                integration features. These terms govern your use of docmd.io and
+                integration features. These terms govern your use of mddoc.app and
                 all related services.
               </p>
             </div>
@@ -61,7 +61,7 @@ export function TermsPageClient() {
                 Some features require an account. You&apos;re responsible for
                 keeping your login credentials secure. If you suspect unauthorized
                 access, let us know immediately at{" "}
-                <a href="mailto:hello@docmd.io" className="text-teal hover:text-forest font-medium underline underline-offset-2">hello@docmd.io</a>.
+                <a href="mailto:hello@mddoc.app" className="text-teal hover:text-forest font-medium underline underline-offset-2">hello@mddoc.app</a>.
               </p>
               <p className="text-bark-light leading-relaxed">
                 You must be at least 16 years old to create an account. If
@@ -193,7 +193,7 @@ export function TermsPageClient() {
               <h2 className="text-2xl font-bold text-forest mb-4">Contact</h2>
               <p className="text-bark-light leading-relaxed">
                 Questions? Email{" "}
-                <a href="mailto:hello@docmd.io" className="text-teal hover:text-forest font-medium underline underline-offset-2">hello@docmd.io</a>. We read every
+                <a href="mailto:hello@mddoc.app" className="text-teal hover:text-forest font-medium underline underline-offset-2">hello@mddoc.app</a>. We read every
                 message.
               </p>
             </div>

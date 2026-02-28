@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DocsContentLayout } from "@/components/docs/DocsContentLayout";
+import { BreadcrumbSchema } from "@/components/docs/BreadcrumbSchema";
 import { CodeBlock } from "@/components/docs/CodeBlock";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "SharePoint Export — DocMD Documentation",
@@ -12,6 +15,8 @@ export const metadata: Metadata = {
 
 export default function SharePointPage() {
   return (
+    <>
+    <BreadcrumbSchema title="SharePoint Export" href="/docs/sharepoint" />
     <DocsContentLayout
       title="SharePoint Export"
       description="Push converted documents straight to SharePoint. One API call."
@@ -71,7 +76,7 @@ export default function SharePointPage() {
         <CodeBlock
           language="bash"
           title="Check Microsoft connection"
-          code={`curl https://api.docmd.io/api/settings/microsoft \\
+          code={`curl https://api.mddoc.app/api/settings/microsoft \\
   -H "Authorization: Bearer docmd_YOUR_KEY"`}
         />
         <CodeBlock
@@ -97,7 +102,7 @@ export default function SharePointPage() {
         <CodeBlock
           language="bash"
           title="Create a SharePoint destination"
-          code={`curl -X POST https://api.docmd.io/api/projects/PROJECT_ID/destinations \\
+          code={`curl -X POST https://api.mddoc.app/api/projects/PROJECT_ID/destinations \\
   -H "Authorization: Bearer docmd_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -132,7 +137,7 @@ export default function SharePointPage() {
         <CodeBlock
           language="bash"
           title="Export to SharePoint"
-          code={`curl -X POST https://api.docmd.io/api/conversions/CONVERSION_ID/export \\
+          code={`curl -X POST https://api.mddoc.app/api/conversions/CONVERSION_ID/export \\
   -H "Authorization: Bearer docmd_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{ "destination_id": "your-destination-uuid" }'`}
@@ -155,7 +160,7 @@ export default function SharePointPage() {
         <CodeBlock
           language="bash"
           title="Check export status"
-          code={`curl https://api.docmd.io/api/exports/EXPORT_ID \\
+          code={`curl https://api.mddoc.app/api/exports/EXPORT_ID \\
   -H "Authorization: Bearer docmd_YOUR_KEY"`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
@@ -239,7 +244,7 @@ export default function SharePointPage() {
         <CodeBlock
           language="bash"
           title="1. Convert"
-          code={`CONV_ID=$(curl -s -X POST https://api.docmd.io/api/v1/convert \\
+          code={`CONV_ID=$(curl -s -X POST https://api.mddoc.app/api/v1/convert \\
   -H "Authorization: Bearer docmd_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -252,7 +257,7 @@ export default function SharePointPage() {
         <CodeBlock
           language="bash"
           title="2. Export"
-          code={`curl -X POST https://api.docmd.io/api/conversions/$CONV_ID/export \\
+          code={`curl -X POST https://api.mddoc.app/api/conversions/$CONV_ID/export \\
   -H "Authorization: Bearer docmd_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{ "destination_id": "DEST_ID" }'`}
@@ -260,7 +265,7 @@ export default function SharePointPage() {
         <CodeBlock
           language="bash"
           title="3. Check status"
-          code={`curl https://api.docmd.io/api/exports/EXPORT_ID \\
+          code={`curl https://api.mddoc.app/api/exports/EXPORT_ID \\
   -H "Authorization: Bearer docmd_YOUR_KEY"`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
@@ -334,5 +339,6 @@ export default function SharePointPage() {
         </p>
       </section>
     </DocsContentLayout>
+    </>
   );
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { HomePageClient } from "./HomePageClient";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "DocMD — Markdown to Word, Powered by AI",
   description:
@@ -35,12 +37,12 @@ function WebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "DocMD",
-    url: "https://docmd.io",
+    url: "https://mddoc.app",
     description:
       "AI-powered markdown to Word document conversion platform. Upload markdown, get professionally styled .docx files matching your org templates.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://docmd.io/convert",
+      target: "https://mddoc.app/convert",
       "query-input": "required name=search_term_string",
     },
   };

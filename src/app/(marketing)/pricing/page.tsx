@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { PricingPageClient } from "./PricingPageClient";
 import { faqs } from "@/data/pricing";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Pricing — Solo, Team & Enterprise Plans",
   description:

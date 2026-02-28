@@ -210,10 +210,10 @@ function IncidentContact() {
               If something isn&apos;t working, email us. We respond fast.
             </p>
             <a
-              href="mailto:hello@docmd.io"
+              href="mailto:hello@mddoc.app"
               className="inline-flex items-center gap-2 bg-golden text-forest-dark font-semibold px-6 py-3 rounded-full text-sm hover:bg-golden-dark transition-all"
             >
-              hello@docmd.io
+              hello@mddoc.app
             </a>
           </div>
         </ScrollReveal>

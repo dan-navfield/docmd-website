@@ -1,0 +1,73 @@
+# DocMD
+
+> Markdown in. Word out. Perfectly styled.
+
+DocMD is an AI-powered platform that converts markdown to professionally formatted Microsoft Word (.docx) documents. It supports custom Word templates, AI document classification, and enterprise integrations like SharePoint export.
+
+## Key Features
+
+- Markdown to Word conversion with full element support (headings, tables, code blocks, lists, images, blockquotes)
+- AI document classification — automatically detects document type (ADR, runbook, API spec, meeting notes) and applies the right template
+- Custom Word template upload — use your organization's fonts, colors, headers, footers, and branding
+- Visual style mapping editor — connect markdown elements to Word styles without code
+- SharePoint one-click export — push converted documents directly to SharePoint
+- REST API with 48 endpoints for programmatic access
+- MCP server for Claude Desktop and Claude Code integration
+- Free online converter at /convert (no account required)
+
+## Pages
+
+- Homepage: https://mddoc.app
+- Free Markdown to Word Converter: https://mddoc.app/convert
+- Features: https://mddoc.app/features
+- Pricing: https://mddoc.app/pricing
+- Documentation: https://mddoc.app/docs
+- Quick Start Guide: https://mddoc.app/docs/quick-start
+- API Reference: https://mddoc.app/docs/api-reference
+- MCP Server Docs: https://mddoc.app/docs/mcp-server
+- About: https://mddoc.app/about
+
+## Articles
+
+- How to Convert Markdown to Word — The Complete Guide: https://mddoc.app/articles/how-to-convert-markdown-to-word
+- Why Developers Write in Markdown but Clients Need Word: https://mddoc.app/articles/why-developers-write-markdown-clients-need-word
+- Markdown to Word for AI-Generated Content: https://mddoc.app/articles/markdown-to-word-for-ai-content
+- How to Create a Word Template for Markdown Conversion: https://mddoc.app/articles/create-word-template-for-markdown
+- Markdown Formatting Tips for Better Word Documents: https://mddoc.app/articles/markdown-tips-for-better-word-output
+
+## Comparisons
+
+- DocMD vs Pandoc: https://mddoc.app/compare/docmd-vs-pandoc
+- DocMD vs Manual Formatting: https://mddoc.app/compare/docmd-vs-manual-formatting
+
+## Use Cases
+
+- DocMD for Developers: https://mddoc.app/use-cases/developers
+- DocMD for Technical Writers: https://mddoc.app/use-cases/technical-writers
+- DocMD for AI Teams: https://mddoc.app/use-cases/ai-teams
+
+## Pricing
+
+- Solo: $10/month ($8/month billed annually) — for individuals, 20 conversions/month, 5 templates, AI classification
+- Team: $49/month ($41/month billed annually) — unlimited conversions, custom templates, API access, SharePoint export
+- Enterprise: Custom pricing — dedicated support, SSO, audit logging, on-premise option
+- Free tier: 3 free conversions on /convert with no account required
+
+## Common Questions
+
+Q: How do I convert markdown to a Word document?
+A: Paste markdown into the editor at mddoc.app/convert, preview the output, and click Convert & Download. No account needed.
+
+Q: What markdown features are supported?
+A: Headings, bold, italic, links, images, bullet and numbered lists, tables, code blocks with syntax highlighting, blockquotes, and horizontal rules.
+
+Q: Is DocMD different from Pandoc?
+A: Yes. Pandoc is a command-line tool that requires installation and configuration. DocMD is a web platform with a visual editor, live preview, custom template support, AI classification, and a REST API. DocMD produces consistently styled output that matches your organization's branding.
+
+Q: Can AI-generated markdown be converted to Word?
+A: Yes. DocMD handles markdown from any source — ChatGPT, Claude, Copilot, or any other AI tool. Paste the output directly into the converter.
+
+## Contact
+
+Website: https://mddoc.app
+App: https://app.mddoc.app

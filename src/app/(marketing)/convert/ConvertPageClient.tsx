@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
@@ -22,12 +23,20 @@ import { Container } from "@/components/layout/Container";
 import { ScrollReveal } from "@/components/shared/ScrollReveal";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { GlowCard } from "@/components/interactive/GlowCard";
-import { MagneticButton } from "@/components/interactive/MagneticButton";
 import { GradientText } from "@/components/shared/GradientText";
-import { AnimatedCounter } from "@/components/interactive/AnimatedCounter";
 import { sampleMarkdown } from "@/data/features";
 import { convertFaqs } from "@/data/convert-faq";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
+
+const MagneticButton = dynamic(
+  () => import("@/components/interactive/MagneticButton").then((mod) => ({ default: mod.MagneticButton })),
+  { ssr: false, loading: () => <div className="inline-block" /> }
+);
+
+const AnimatedCounter = dynamic(
+  () => import("@/components/interactive/AnimatedCounter").then((mod) => ({ default: mod.AnimatedCounter })),
+  { ssr: false, loading: () => <span /> }
+);
 import {
   Accordion,
   AccordionItem,
@@ -56,8 +65,17 @@ function renderMarkdownToHtml(md: string): string {
     }
   }
 
-  function renderInline(text: string): string {
+  function escapeHtml(text: string): string {
     return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function renderInline(text: string): string {
+    // Escape HTML first, then apply markdown formatting
+    return escapeHtml(text)
       .replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>')
       .replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>")
       .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
@@ -65,7 +83,10 @@ function renderMarkdownToHtml(md: string): string {
       .replace(/_([^_]+)_/g, "<em>$1</em>")
       .replace(
         /\[([^\]]+)\]\(([^)]+)\)/g,
-        '<a href="$2" class="text-teal underline" target="_blank" rel="noopener noreferrer">$1</a>'
+        (_, linkText, url) => {
+          if (/^javascript:/i.test(url.trim())) return linkText;
+          return `<a href="${url}" class="text-teal underline" target="_blank" rel="noopener noreferrer">${linkText}</a>`;
+        }
       );
   }
 
@@ -632,6 +653,55 @@ function HowItWorks() {
   );
 }
 
+// ─── Educational Content ─────────────────────────────────────────────────────
+
+function WhatIsConversion() {
+  return (
+    <section className="py-20 md:py-28 bg-cream">
+      <Container size="narrow">
+        <ScrollReveal>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-8">
+            What Is Markdown to Word Conversion?
+          </h2>
+
+          <div className="space-y-6 text-bark-light text-lg leading-relaxed">
+            <p>
+              Markdown is the writing format developers, technical writers, and
+              AI tools use every day. It&apos;s plain text with simple syntax:{" "}
+              <code className="text-sm bg-sand px-1.5 py-0.5 rounded font-mono">#</code>{" "}
+              for headings,{" "}
+              <code className="text-sm bg-sand px-1.5 py-0.5 rounded font-mono">**</code>{" "}
+              for bold,{" "}
+              <code className="text-sm bg-sand px-1.5 py-0.5 rounded font-mono">-</code>{" "}
+              for lists. It&apos;s fast to write, easy to version control, and
+              works everywhere. But when you need to share a document with
+              someone who lives in Microsoft Word — a client, a compliance team,
+              a manager — you need a .docx file.
+            </p>
+
+            <p>
+              Markdown to Word conversion takes your .md content and transforms
+              it into a properly formatted Word document. Headings become Word
+              heading styles. Tables get borders and alignment. Code blocks are
+              styled with monospace fonts. The result opens perfectly in
+              Microsoft Word, Google Docs, and LibreOffice — no manual formatting
+              required.
+            </p>
+
+            <p>
+              The alternative is copy-pasting markdown into Word and fixing every
+              heading, table, and code block by hand. That takes time, introduces
+              errors, and produces inconsistent output. A converter eliminates
+              that entire step. Write in markdown, convert in seconds, ship a
+              professional document.
+            </p>
+          </div>
+        </ScrollReveal>
+      </Container>
+    </section>
+  );
+}
+
 // ─── Social Proof Stats ─────────────────────────────────────────────────────
 
 function StatsStrip() {
@@ -754,6 +824,7 @@ export function ConvertPageClient() {
       <Hero />
       <ConverterTool />
       <HowItWorks />
+      <WhatIsConversion />
       <StatsStrip />
       <FaqSection />
       <CtaSection />

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DocsContentLayout } from "@/components/docs/DocsContentLayout";
+import { BreadcrumbSchema } from "@/components/docs/BreadcrumbSchema";
 import { CodeBlock } from "@/components/docs/CodeBlock";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Templates & Mappings — DocMD Documentation",
@@ -12,6 +15,8 @@ export const metadata: Metadata = {
 
 export default function TemplatesPage() {
   return (
+    <>
+    <BreadcrumbSchema title="Templates & Mappings" href="/docs/templates" />
     <DocsContentLayout
       title="Templates & Mappings"
       description="The system that connects markdown elements to Word styles."
@@ -91,7 +96,7 @@ export default function TemplatesPage() {
         <CodeBlock
           language="bash"
           title="Get template styles (internal API)"
-          code={`curl https://api.docmd.io/api/templates/TEMPLATE_ID/styles \\
+          code={`curl https://api.mddoc.app/api/templates/TEMPLATE_ID/styles \\
   -H "Authorization: Bearer docmd_YOUR_KEY"`}
         />
         <CodeBlock
@@ -405,5 +410,6 @@ export default function TemplatesPage() {
         </p>
       </section>
     </DocsContentLayout>
+    </>
   );
 }

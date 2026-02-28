@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { TermsPageClient } from "./TermsPageClient";
 
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:

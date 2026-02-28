@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DocsContentLayout } from "@/components/docs/DocsContentLayout";
+import { BreadcrumbSchema } from "@/components/docs/BreadcrumbSchema";
 import { CodeBlock } from "@/components/docs/CodeBlock";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Quick Start — DocMD Documentation",
@@ -12,6 +15,8 @@ export const metadata: Metadata = {
 
 export default function QuickStartPage() {
   return (
+    <>
+    <BreadcrumbSchema title="Quick Start" href="/docs/quick-start" />
     <DocsContentLayout
       title="Quick Start"
       description="Your first conversion in under five minutes."
@@ -90,7 +95,7 @@ export default function QuickStartPage() {
         <CodeBlock
           language="bash"
           title="List templates"
-          code={`curl https://api.docmd.io/api/v1/templates \\
+          code={`curl https://api.mddoc.app/api/v1/templates \\
   -H "Authorization: Bearer docmd_YOUR_KEY"`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
@@ -99,7 +104,7 @@ export default function QuickStartPage() {
         <CodeBlock
           language="bash"
           title="List mappings for a template"
-          code={`curl "https://api.docmd.io/api/v1/mappings?template_id=TEMPLATE_ID" \\
+          code={`curl "https://api.mddoc.app/api/v1/mappings?template_id=TEMPLATE_ID" \\
   -H "Authorization: Bearer docmd_YOUR_KEY"`}
         />
       </section>
@@ -116,7 +121,7 @@ export default function QuickStartPage() {
         <CodeBlock
           language="bash"
           title="Convert markdown"
-          code={`curl -X POST https://api.docmd.io/api/v1/convert \\
+          code={`curl -X POST https://api.mddoc.app/api/v1/convert \\
   -H "Authorization: Bearer docmd_YOUR_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -161,7 +166,7 @@ export default function QuickStartPage() {
         <CodeBlock
           language="bash"
           title="Download"
-          code={`curl https://api.docmd.io/api/v1/conversions/CONVERSION_ID/download \\
+          code={`curl https://api.mddoc.app/api/v1/conversions/CONVERSION_ID/download \\
   -H "Authorization: Bearer docmd_YOUR_KEY" \\
   -o project-brief.docx`}
         />
@@ -195,7 +200,7 @@ export default function QuickStartPage() {
         </h3>
         <CodeBlock
           language="javascript"
-          code={`const response = await fetch("https://api.docmd.io/api/v1/convert", {
+          code={`const response = await fetch("https://api.mddoc.app/api/v1/convert", {
   method: "POST",
   headers: {
     "Authorization": "Bearer docmd_YOUR_KEY",
@@ -221,7 +226,7 @@ fs.writeFileSync("output.docx", Buffer.from(buffer));`}
           code={`import requests
 
 response = requests.post(
-    "https://api.docmd.io/api/v1/convert",
+    "https://api.mddoc.app/api/v1/convert",
     headers={"Authorization": "Bearer docmd_YOUR_KEY"},
     json={
         "markdown": "# Hello World\\n\\nConverted via the API.",
@@ -269,5 +274,6 @@ with open("output.docx", "wb") as f:
         </ul>
       </section>
     </DocsContentLayout>
+    </>
   );
 }

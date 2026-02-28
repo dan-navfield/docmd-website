@@ -206,7 +206,7 @@ function ApiPreview() {
               <pre className="text-white/50 whitespace-pre-wrap leading-loose text-xs md:text-sm">
                 <span className="text-warm-gray">$</span>{" "}
                 <span className="text-golden">curl</span> -X POST
-                https://api.docmd.io/api/v1/convert \{"\n"}
+                https://api.mddoc.app/api/v1/convert \{"\n"}
                 {"  "}-H{" "}
                 <span className="text-teal-light">
                   &quot;Authorization: Bearer docmd_...&quot;

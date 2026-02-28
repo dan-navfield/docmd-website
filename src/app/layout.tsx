@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     "Upload markdown, get professionally styled Word docs matching your org templates. AI-powered classification, template management, and SharePoint export.",
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://docmd.io"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://mddoc.app"
   ),
   openGraph: {
     title: "DocMD — Markdown to Word Documents",
@@ -49,7 +49,7 @@ function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "DocMD",
-    url: "https://docmd.io",
+    url: "https://mddoc.app",
     description:
       "AI-powered markdown to Word document conversion platform. Upload markdown, get professionally styled .docx files matching your org templates.",
     sameAs: [],

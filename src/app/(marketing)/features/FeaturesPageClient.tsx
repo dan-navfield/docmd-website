@@ -239,7 +239,7 @@ function ApiVisual() {
       <div className="space-y-2 text-[11px] leading-relaxed">
         <div>
           <span className="text-green-400">$</span>{" "}
-          <span className="text-white/80">curl -X POST https://api.docmd.io/v1/convert</span>
+          <span className="text-white/80">curl -X POST https://api.mddoc.app/v1/convert</span>
         </div>
         <div className="text-gray-500">&nbsp;&nbsp;-H &quot;Authorization: Bearer sk-...&quot;</div>
         <div className="text-gray-500">&nbsp;&nbsp;-d &apos;{`{"markdown": "# Report", "template": "corporate"}`}&apos;</div>

@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
@@ -23,9 +21,9 @@ export function Footer() {
             {/* Link columns */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16">
               <div>
-                <h4 className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5">
+                <p className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5">
                   Product
-                </h4>
+                </p>
                 <ul className="space-y-3.5">
                   {footerLinks.product.map((link) => (
                     <li key={link.label}>
@@ -40,9 +38,9 @@ export function Footer() {
                 </ul>
               </div>
               <div>
-                <h4 className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5">
+                <p className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5">
                   Company
-                </h4>
+                </p>
                 <ul className="space-y-3.5">
                   {footerLinks.company.map((link) => (
                     <li key={link.label}>
@@ -57,9 +55,9 @@ export function Footer() {
                 </ul>
               </div>
               <div>
-                <h4 className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5">
+                <p className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5">
                   Resources
-                </h4>
+                </p>
                 <ul className="space-y-3.5">
                   {footerLinks.resources.map((link) => (
                     <li key={link.label}>
@@ -74,9 +72,9 @@ export function Footer() {
                 </ul>
               </div>
               <div>
-                <h4 className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5">
+                <p className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5">
                   Legal
-                </h4>
+                </p>
                 <ul className="space-y-3.5">
                   {footerLinks.legal.map((link) => (
                     <li key={link.label}>

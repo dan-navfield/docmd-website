@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DocsContentLayout } from "@/components/docs/DocsContentLayout";
+import { BreadcrumbSchema } from "@/components/docs/BreadcrumbSchema";
 import { CodeBlock } from "@/components/docs/CodeBlock";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "MCP Server — DocMD Documentation",
@@ -12,6 +15,8 @@ export const metadata: Metadata = {
 
 export default function McpServerPage() {
   return (
+    <>
+    <BreadcrumbSchema title="MCP Server" href="/docs/mcp-server" />
     <DocsContentLayout
       title="MCP Server"
       description="Connect DocMD to Claude as a tool. Convert from your AI workflow."
@@ -74,7 +79,7 @@ export default function McpServerPage() {
       "command": "python3",
       "args": ["/path/to/mcp_server.py"],
       "env": {
-        "DOCMD_API_URL": "https://api.docmd.io",
+        "DOCMD_API_URL": "https://api.mddoc.app",
         "DOCMD_API_KEY": "docmd_YOUR_KEY"
       }
     }
@@ -101,7 +106,7 @@ export default function McpServerPage() {
       "command": "python3",
       "args": ["./mcp_server.py"],
       "env": {
-        "DOCMD_API_URL": "https://api.docmd.io",
+        "DOCMD_API_URL": "https://api.mddoc.app",
         "DOCMD_API_KEY": "docmd_YOUR_KEY"
       }
     }
@@ -342,5 +347,6 @@ export default function McpServerPage() {
         </p>
       </section>
     </DocsContentLayout>
+    </>
   );
 }

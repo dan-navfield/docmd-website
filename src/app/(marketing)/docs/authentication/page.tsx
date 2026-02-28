@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DocsContentLayout } from "@/components/docs/DocsContentLayout";
+import { BreadcrumbSchema } from "@/components/docs/BreadcrumbSchema";
 import { CodeBlock } from "@/components/docs/CodeBlock";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Authentication — DocMD Documentation",
@@ -12,6 +15,8 @@ export const metadata: Metadata = {
 
 export default function AuthenticationPage() {
   return (
+    <>
+    <BreadcrumbSchema title="Authentication" href="/docs/authentication" />
     <DocsContentLayout
       title="Authentication"
       description="API keys, bearer tokens, and access tiers."
@@ -95,7 +100,7 @@ export default function AuthenticationPage() {
         </p>
         <CodeBlock
           language="bash"
-          code={`curl https://api.docmd.io/api/v1/templates \\
+          code={`curl https://api.mddoc.app/api/v1/templates \\
   -H "Authorization: Bearer docmd_YOUR_KEY"`}
         />
         <p className="text-bark-light leading-relaxed mb-4">
@@ -313,5 +318,6 @@ export default function AuthenticationPage() {
         </p>
       </section>
     </DocsContentLayout>
+    </>
   );
 }
